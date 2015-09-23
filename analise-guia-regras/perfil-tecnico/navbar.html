@@ -1,0 +1,20 @@
+<div class="list-group">
+	<a class="list-group-item titulo <?php if($secao == "") { echo "active"; }; ?>" href="index.php">Técnico</a>
+	<a class="list-group-item<?php if($secao == "pagina-inicial") { echo " active"; }; ?>" href="?secao=pagina-inicial">Página Inicial</a>
+	<a class="list-group-item<?php if($secao == "caixa-de-entrada") { echo " active"; }; ?>" href="?secao=caixa-de-entrada">Caixa de Entrada</a>
+	<a class="list-group-item<?php if($secao == "analise-tecnica") { echo " active"; }; ?>" href="?secao=analise-tecnica">Análise Técnica</a>
+	<?php if($secao == "analise-tecnica") { echo "
+	<div class='list-group-item'>
+		<a href='?secao=analise-tecnica&etapa=dados-gerais' role='button'>Dados Gerais</a><br>
+		<a href='?secao=analise-tecnica&etapa=documentos-enviados' role='button'>Documentos Enviados</a><br>
+		<a href='?secao=analise-tecnica&etapa=analise-da-ficha-do-imovel' role='button'>Análise da Ficha do Imóvel</a><br>
+		<a href='?secao=analise-tecnica&etapa=analise-geo' role='button'>Análise Geo</a><br>
+		<a href='?secao=analise-tecnica&etapa=vistoria' role='button'>Vistoria</a><br>
+		<a href='?secao=analise-tecnica&etapa=resumo' role='button'>Resumo</a><br>
+		<a href='?secao=analise-tecnica&etapa=conclusao' role='button'>Conclusão</a>
+	</div>";
+	}; ?>
+	<a class="list-group-item<?php if($secao == "consultar-processos") { echo " active"; }; ?>" href="?secao=consultar-processos">Consultar Processos</a>
+</div>
+
+<a href="../">« Voltar</a>
