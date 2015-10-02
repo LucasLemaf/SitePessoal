@@ -25,17 +25,10 @@ body {
 	padding: 10px 0;
 }
 
-header {
-	display: block;
-	background-color: #FFF; 
-	height: 100px;
-	border-bottom: solid 1px #05036B;
-}
-
 #conteudo {
+	padding: 20px 30px;
 	min-height: 500px;
 	background-color: #FFF;
-	padding-top: 30px; 
 }
 #conteudoCurriculo {
 	min-height: 2050px;
@@ -49,7 +42,14 @@ header {
 	padding-top: 30px; 
 }
 
+/** Cabeçalho */
 
+header {
+	display: block;
+	background-color: #FFF; 
+	height: 100px;
+	border-bottom: solid 1px #05036B;
+}
 
 header #logo {
 	display: block;
@@ -97,6 +97,8 @@ header nav ul li.selecionado a {
 	border-bottom: solid 4px #05036B;
 }
 
+/** Rodapé */
+
 footer {
 	margin: auto;
 	width: 100%;
@@ -120,12 +122,10 @@ footer a {
 	color: #FFF;
 }
 
-section {
-	padding: 20px 30px;
-}
+/** Conteúdo */
 
 h1, h2 {
-	margin-bottom: 10px; 
+	margin: 40px 0px 10px 0px;
 	color: #05036B;
 }
 
@@ -255,7 +255,7 @@ p {
 	top: 1680px;
 }
 
-#formacaos {
+#formacoes {
 
 	width: 55%;
 
