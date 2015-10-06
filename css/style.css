@@ -17,7 +17,7 @@ body {
 	background: #ccc ;
 }
 
-#wrapper {
+.wrapper {
 	position: absolute;
 	width: 900px;
 	left: 50%;
@@ -25,21 +25,10 @@ body {
 	padding: 10px 0;
 }
 
-#conteudo {
+.conteudo {
 	padding: 20px 30px;
 	min-height: 500px;
 	background-color: #FFF;
-}
-#conteudoCurriculo {
-	min-height: 2050px;
-	background-color: #FFF;
-	padding-top: 30px; 
-}
-
-#conteudoContato {
-	min-height: 825px;
-	background-color: #FFF;
-	padding-top: 30px; 
 }
 
 /** Cabeçalho */
@@ -122,10 +111,9 @@ footer a {
 	color: #FFF;
 }
 
-/** Conteúdo */
+/** Conteúdo Geral do Site */
 
 h1, h2 {
-	margin: 40px 0px 10px 0px;
 	color: #05036B;
 }
 
@@ -134,136 +122,79 @@ p {
 	color: #555;
 }
 
-
-#afastamento {
-
-	margin: 10px; 
+.clearfix {
+	overflow: auto;
 }
 
-
-#objetivos {
-
-	width: 50%;
-
-	height: 200px;
-
-	position: absolute;
-
-	left: 400px;
-
-	top: 250px;
-
-	padding: 0;
+/** Página Inicial */
+#pagina_inicial h1, #pagina_inicial h2 {
+	margin: 40px 0px 10px 0px;
 }
 
-#titulo {
-
-	width: 50%;
-
-	height: 200px;
-
-	position: absolute;
-
-	left: 400px;
-
-	top: 160px;
-}
+/** Currículo */
 
 #foto {
-	width: 1px;
-
-	position: absolute;
-
-	left: 50px;
-
-	top: 160px;
-
-	border: 0;
+	position: relative;
+	width: 250px;
+	height: 200px;
+	overflow: hidden;
+	margin-bottom: 15px;
 }
 
-#informacoespessoais {
-
-	width: 900px;
-
+#foto img {
 	position: absolute;
-
-	left: 50px;
-
-	top: 370px;
-	
-	line-height: 1.5;
+	left: 50%;
+	top: 75%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
 
-#cargos {
-
-	width: 55%;
-
-	height: 800px;
-
-	position: absolute;
-
-	left: 225px;
-
-	top: 810px;
+#curriculo h1, #curriculo h2 {
+	margin-bottom: 20px;
 }
 
-#titulos {
-
-	width: 900px;
-
-	height: 800px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 743px;
+#curriculo fieldset {
+	border: none;
+	border-radius: 15px;
+	padding: 15px;
+	background-color: #CDE1E4;
 }
 
-#cargoss {
-
-	width: 55%;
-
-
-	position: absolute;
-
-	left: 225px;
-
-	top: 1240px;
-
+#dados_pessoais {
+	float: left;
+	font-size: 80%;
 }
 
-#titulosss {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 1600px;
+#dados_pessoais fieldset {
+	border: none;
+	width: 300px;
+	background-color: #FFF;
 }
 
-#formacao {
-
-	width: 55%;
-
-	position: absolute;
-
-	left: 225px;
-
-	top: 1680px;
+#dados_pessoais fieldset div {
+	overflow: auto;
 }
 
-#formacoes {
+#dados_pessoais fieldset label {
+	float: left;
+	font-weight: bold;
+    text-align: right;
+    width: 72px;
+    display: inline-block;
+    padding: 2px 6px;
+}
 
-	width: 55%;
+#dados_pessoais span {
+	color: #555;
+}
 
-	position: absolute;
+/** Contato */
 
-	left: 225px;
-
-	top: 1870px;
+#conteudoContato {
+	min-height: 825px;
+	background-color: #FFF;
+	padding-top: 30px; 
 }
 
 #mensagem {
