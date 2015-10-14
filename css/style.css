@@ -26,7 +26,7 @@ body {
 }
 
 .conteudo {
-	padding: 20px 30px;
+	padding: 47px 30px;
 	min-height: 500px;
 	background-color: #FFF;
 }
@@ -102,7 +102,7 @@ footer span {
 	padding-right: 20px;
 }
 
-footer span#anoPagina {
+footer span#ano_pagina {
 	display: block;
 	float: right;
 }
@@ -143,7 +143,7 @@ p {
 
 #foto img {
 	position: absolute;
-	left: 50%;
+	left: 43%;
 	top: 75%;
 	-webkit-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
@@ -152,6 +152,7 @@ p {
 
 #curriculo h1, #curriculo h2 {
 	margin-bottom: 20px;
+	height: 25px;
 }
 
 #curriculo fieldset {
@@ -159,6 +160,31 @@ p {
 	border-radius: 15px;
 	padding: 15px;
 	background-color: #CDE1E4;
+}
+
+#experiencias h1 {
+	margin-bottom: 20px;
+	height: 40px;
+	margin-left: 200px;
+	margin-top: 35px;
+}
+
+#experiencias fieldset {
+	border: none;
+	border-radius: 15px;
+	padding: 15px;
+	background-color: #CDE1E4;
+	margin-top: 33px;
+}
+
+#experiencias span {
+	color: #555;
+	line-height: 1.5; 
+}
+
+#experiencias fieldset label {
+	font-weight: bold;
+	text-align: right;
 }
 
 #dados_pessoais {
@@ -170,6 +196,7 @@ p {
 	border: none;
 	width: 300px;
 	background-color: #FFF;
+	margin-left: -9%;
 }
 
 #dados_pessoais fieldset div {
@@ -189,122 +216,14 @@ p {
 	color: #555;
 }
 
+
 /** Contato */
 
-#conteudoContato {
-	min-height: 825px;
-	background-color: #FFF;
-	padding-top: 30px; 
+#contato h1 {
+	text-align: center;
 }
 
-#mensagem {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 240px;
+#contato div {
+	text-align: left;
 }
 
-#enviaremail {
-
-	/*width: 900px;*/
-
-	position: absolute;
-
-	left: 150px;
-
-	top: 412px;
-
-	margin: 
-}
-
-#caixasdetexto {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 415px;
-}
-
-#caixatexto {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 447px;
-}
-
-#caixamensagem {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 480px;
-}
-
-#estado {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 150px;
-
-	top: 693px;
-}
-
-#combobox {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 335px;
-
-	top: 695px;
-}
-
-#resposta {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 150px;
-
-	top: 800px;
-}
-
-#simounao {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 470px;
-
-	top: 800px;
-}
-
-#button {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 550px;
-
-	top: 880px;
-}

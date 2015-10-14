@@ -1,140 +1,114 @@
 <html>
 <head>
-  <meta charset='utf-8'>
+	<meta charset='utf-8'>
 	<title>Currículo</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 	
-  <div id="wrapper">
-    
-      <header>
+	<div class="wrapper">
+		
+		<header>
+			<a id="logo" href="inicio.html">
+				<img src="../img/download.jpg"> 
+			</a>
 
-        <a id="logo" href="inicio.html">
+			<nav>
+				<ul>
+					<li><a href="inicio.html">Início</a></li>
+					<li><a href="curriculo.html">Currículo</a></li>
+					<li class="selecionado"><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
 
-          <img src="../img/download.jpg">
+		</header> 
+	
+		<div id="contato" class="conteudo">
+					
+			<h1>Envie uma Mensagem</h1>
+									
+				<div>
 
-        </a>
+					<strong>Nome:</strong>
+					<br>
+					<strong>Email:</strong>
+					<br>
+					<strong>Mensagem:</strong>
+					</br>
+				</div>
 
-        <nav>
+				<div>
 
-          <ul>
+					<td><input type="text" name="nome" size="40"> <br /></td> 
+					<td><input type="text" name="nome" size="40"> <br /></td>				 
+					<textarea rows="10" cols="40" maxlength="500"></textarea>
+					</textarea>
+		
+					<strong>Estado:</strong>
+		
+						<select>
+							<option value="">-Escolha-</option>
+							<option value="">Acre</option>
+							<option value="">Alagoas</option>
+							<option value="">Amapá</option>
+							<option value="">Amazonas</option>
+							<option value="">Bahia</option>
+							<option value="">Ceará</option>
+							<option value="">Distrito Federal(Brasília)</ption>
+							<option value="">Espírito Santo</option>
+							<option value="">Goiás</option>
+							<option value="">Maranhão</option>
+							<option value="">Mato Grosso</option>
+							<option value="">Mato Grosso do Sul</option>
+							<option value="">Minas Gerais</option>
+							<option value="">Pará</option>
+							<option value="">Paraíba</option>
+							<option value="">Pernambuco</option>
+							<option value="">Piauí</option>
+							<option value="">Rio Grande do Norte</option>
+							<option value="">Rio Grande do Sul</option>
+							<option value="">Rio de Janeiro</option>
+							<option value="">Rondônia</option>
+							<option value="">Roraima</option>
+							<option value="">Santa Catarina</option>
+							<option value="">São Paulo</option>		
+							<option value="">Sergipe</option>
+							<option value="">Tocantins</option>
+							</select>	 
+					
+						<div>
+							<strong>Deseja receber a <br>resposta por Email ? :</strong>
+						</div> 
 
-            <li><a href="inicio.html">Início</a></li>
-            <li><a href="Currículo.html">Currículo</a></li>
-            <li class="selecionado"><a href="contato.html">Contato</a></li>
+				</div>
 
-          </ul>
-
-        </nav>
-
-      </header>
-
-
-    <div id="conteudoContato">
-  
-  	 <div id="mensagem">
-  		  <h1><label>Envie uma Mensagem</label></h1>
-  	 </div>
-  	
-  	 <div id="enviaremail">
-    	 <p><strong>Nome*:</strong></p>
-    	 <p><strong>Email*:</strong></p>
-       <br>
-    	 <p><strong>Mensagem*:</strong></p>
-       </br>	
-  	 </div>
-
-  	 <div id="caixasdetexto">
-     		 <td><input type="text" name="nome" size="40"> <br /></td>
-     	  </div>
-
-     	  <div id="caixatexto">
-     		 <td><input type="text" name="nome" size="40"> <br /></td>
-     	  </div>
-
-     	<div id="caixamensagem">
-     		<textarea rows="10" cols="40" maxlength="500"></textarea>
-     		</textarea>
-     	</div>
-
-     	<div id="estado">
-     		<p><strong>Estado:</strong></p>
-     	</div>
-
-     	<div id="combobox">
-  		  <select>
-    		  <option value="x">-Escolha-</option>
-    			<option value="x">Acre</option>
-    			<option value="x">Alagoas</option>
-    			<option value="x">Amapá</option>
-    			<option value="x">Amazonas</option>
-    			<option value="x">Bahia</option>
-    			<option value="x">Ceará</option>
-    			<option value="x">Distrito Federal(Brasília)</option>
-    			<option value="x">Espírito Santo</option>
-    			<option value="x">Goiás</option>
-    			<option value="x">Maranhão</option>
-    			<option value="x">Mato Grosso</option>
-      		<option value="x">Mato Grosso do Sul</option>
-      		<option value="x">Minas Gerais</option>
-      		<option value="x">Pará</option>
-      		<option value="x">Paraíba</option>
-      		<option value="x">Pernambuco</option>
-      		<option value="x">Piauí</option>
-      		<option value="x">Rio Grande do Norte</option>
-      		<option value="x">Rio Grande do Sul</option>
-      		<option value="x">Rio de Janeiro</option>
-      		<option value="x">Rondônia</option>
-      		<option value="x">Roraima</option>
-      		<option value="x">Santa Catarina</option>
-      		<option value="y">São Paulo</option>		
-    		  <option value="x">Sergipe</option>
-    		  <option value="x">Tocantins</option>
-  		  </select>		
-     	</div>
-
-     	<div id="resposta">
-     		<p><strong>Deseja receber a resposta por Email ? :</strong></p>
-     	</div>
-
-     	<div id="simounao">
-     		<label for="Sim"><strong>Sim</strong></label>
-    				<input type="radio" name="sim" id="Sim" value="Sim"><br>
-    		<label for="Não"><strong>Não</strong></label>
-    				<input type="radio" name="não" id="Não" value="Não"><br><br>	
-     	</div>
-
-     	<div id="button">
-     		<button>
-     			<strong>Enviar<strong>
-     		</button>
-     	</div>
-
-
-      </div>
-
-      <footer>
-
-      <span>
-        Desenvolvido por : <strong>Lucas Castro</strong>
-      </span>
-        
-          
-      <span>
-          Contato: <a href="http://www.gmail.com.br"> lucascastro.lemaf@gmail.com</a>
-      </span>
-
-      <span>
-          Mais informações em: <a href="http://www.ti.lemaf.ufla.br/"><strong>Lemaf</strong></a> / <a href="http://www.ufla.br/"><strong>Ufla</strong></a> 
-      </span>
-
-      <span id="anoPagina">2015</span>
-    </footer>
-      
-  	</div>
-
-  </div>
+				<div>
+					<input type="radio" name="sim" id="Sim" value="Sim">
+					<strong>Sim</strong>
+					<input type="radio" name="não" id="Não" value="Não">
+					<for="Não"><strong>Não</strong>
+				</div>
+					
+				<div id="input_textarea" class="button">
+					<button>
+						<strong>Enviar</strong>
+					</button>
+		</div>
+		</div>
+							 
+		<footer>
+			<span>
+				Desenvolvido por : <strong>Lucas Castro</strong>
+			</span>
+			<span>
+			  Contato: <a href="http://www.gmail.com.br"> lucascastro.lemaf@gmail.com</a>
+			</span>
+			<span>
+			  Mais informações em: <a href="http://www.ti.lemaf.ufla.br/"><strong>Lemaf</strong></a> / <a href="http://www.ufla.br/"><strong>Ufla</strong></a> 
+			</span>
+			<span id="ano_pagina">2015</span>
+		</footer>
+	</div>
 
 </body>
 </html>
