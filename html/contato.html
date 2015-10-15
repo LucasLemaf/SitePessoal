@@ -12,7 +12,6 @@
 			<a id="logo" href="inicio.html">
 				<img src="../img/download.jpg"> 
 			</a>
-
 			<nav>
 				<ul>
 					<li><a href="inicio.html">Início</a></li>
@@ -20,32 +19,44 @@
 					<li class="selecionado"><a href="contato.html">Contato</a></li>
 				</ul>
 			</nav>
-
 		</header> 
 	
 		<div id="contato" class="conteudo">
 					
-			<h1>Envie uma Mensagem</h1>
-									
-				<div>
+			<h1>Envie uma Mensagem</h1>	
 
-					<strong>Nome:</strong>
+			<div id="formulario">
+										
+				<div class="colunas">
+
+					<label>Nome:</label>
 					<br>
-					<strong>Email:</strong>
+					<label>Email:</label>	
 					<br>
-					<strong>Mensagem:</strong>
+					<label>Mensagem:<label>	
 					</br>
+				</div>		
+			
+
+				<div class="inputs">
+					<span>
+						<td><input type="text" name="nome" size="40"><br/></td>
+					</span>
+					<span>
+						<td><input type="text" name="nome" size="40"> <br /></td>
+					</span>
+					<span>
+						<textarea rows="10" cols="40" maxlength="500"></textarea>
+						</textarea>
+					</span>
+				</div>		 
+
+				<div id="formulario" class="colunas">
+					<label>Estado:</label>
 				</div>
 
-				<div>
-
-					<td><input type="text" name="nome" size="40"> <br /></td> 
-					<td><input type="text" name="nome" size="40"> <br /></td>				 
-					<textarea rows="10" cols="40" maxlength="500"></textarea>
-					</textarea>
-		
-					<strong>Estado:</strong>
-		
+				<div class="inputs">
+					<span>
 						<select>
 							<option value="">-Escolha-</option>
 							<option value="">Acre</option>
@@ -74,26 +85,29 @@
 							<option value="">São Paulo</option>		
 							<option value="">Sergipe</option>
 							<option value="">Tocantins</option>
-							</select>	 
-					
-						<div>
-							<strong>Deseja receber a <br>resposta por Email ? :</strong>
-						</div> 
-
+						</select>	 
+					</span>
 				</div>
+					
+				<div id="pergunta">
+					<label><strong>Deseja receber a <br>resposta por Email ? :</strong></label>
+				</div> 
 
-				<div>
+				<div class="radio_button">
 					<input type="radio" name="sim" id="Sim" value="Sim">
-					<strong>Sim</strong>
-					<input type="radio" name="não" id="Não" value="Não">
-					<for="Não"><strong>Não</strong>
+						<strong>Sim</strong>
+						<input type="radio" name="não" id="Não" value="Não">
+						<for="Não"><strong>Não</strong>
 				</div>
 					
-				<div id="input_textarea" class="button">
+				<div class="enviar">
 					<button>
-						<strong>Enviar</strong>
+						Enviar
 					</button>
-		</div>
+				</div>
+
+			</div>
+
 		</div>
 							 
 		<footer>
