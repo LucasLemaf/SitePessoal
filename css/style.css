@@ -253,7 +253,7 @@ p {
 
 .inputs select {
 
-	margin-top: 64px;
+	margin-top: 62px;
 	margin-left: -166px;
 }
 #pergunta {
@@ -276,10 +276,12 @@ p {
 }
 
 .enviar button {
-	background-color: #D6D5E7;
-	font-size: 30px;
+	color: #555;
+	font-size: 28px;
 	border-bottom: solid 4px #05036B;
+	/* uma outra cor para o botão #425692 */
 	font-weight: bold;
+	margin-left: 120px;
 }
 
 
