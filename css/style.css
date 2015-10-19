@@ -166,8 +166,7 @@ p {
 #experiencias h1 {
 	margin-bottom: 20px;
 	height: 40px;
-	margin-left: 200px;
-	margin-top: 35px;
+	margin: 35px 0px 0px 232px;
 }
 
 #experiencias fieldset {
@@ -175,7 +174,7 @@ p {
 	border-radius: 15px;
 	padding: 15px;
 	background-color: #CDE1E4;
-	margin-top: 33px;
+	margin: 33px 0px 0px 0px;
 }
 
 #experiencias span {
@@ -222,51 +221,48 @@ p {
 
 #contato h1 {
 	text-align: center;
+	margin: 0px 0px 50px 0px;
 }
 
-#formulario {
-
-	border: none;
-	border-radius: 15px;
-	padding: 15px;
-	margin-top: 33px;
+.linha {
 	font-weight: bold;
-}
-
-.colunas {
-	font-weight: bold;
-	text-align: right;
-	display: inline-block;
-	margin-left: 120px;
 	line-height: 2.5;
+	margin-left: 10px;
+	margin-top: 10px;
+	overflow: auto;
+	
 }
 
-.colunas label {
-	margin-top: -150px;
+.linha span {
+	float: right;
+	margin: 10px 200px 0px 0px;
+}
+.linha label {
+	margin: 2px 0px 0px 180px;
+	text-align: right;
+	font-weight: bold;
+	float: left;
+	width: 90px;
 }
 
-.inputs {
-	margin-top: -107px;
-	text-align: center;
-	line-height: 3.5;
-
-}
-
-.inputs select {
-
-	margin-top: 62px;
-	margin-left: -166px;
+.linha select {
 	color: #555;
+	float: left;
+	margin: 10px 0px 0px 13px;
+	padding: 5px;
 }
+
+.input-class {
+	padding: 5px;
+	margin: 0px 0px 5px 0px;
+}
+
 #pergunta {
-	margin-top: 50px;
-	margin-left: 27px;
+	margin: 20px 0px 0px 110px;
 }
 
 .radio_button {
-	margin-top: -16px;
-	margin-left: 250px;
-	letter-spacing: 1.5px;
+	margin: -16px -50px 20px 300px;
 }
 
 .enviar {
@@ -280,10 +276,11 @@ p {
 .enviar button {
 	color: #555;
 	font-size: 28px;
-	border-bottom: solid 4px #05036B;
+	border-bottom: solid 5px #05036B;
 	/* uma outra cor para o botão #425692 */
 	font-weight: bold;
 	margin-left: 120px;
+	padding: 5px 5px 5px 5px;
 }
 
 

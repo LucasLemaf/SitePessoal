@@ -25,104 +25,100 @@
 					
 			<h1>Envie uma Mensagem</h1>	
 
-			<div id="formulario">
-										
-				<div class="colunas">
+			<form>
+				<div class="linha">						
+					<label>Nome:*</label>
+					<span>
+						<td><input type="text" class="input-class" name="nome" size="40"placeholder="Digite aqui seu nome"></td>
+					</span>
+				</div>
 
-					<label>Nome:</label>
-					<br>
-					<label>Email:</label>	
-					<br>
-					<label>Mensagem:<label>	
-					</br>
+				<div class="linha">
+					<label>Email:*</label>	
+					<span>
+						<td><input type="email" class="input-class"name="nome" size="40" placeholder="Digite aqui seu e-mail"></td>
+					</span>
+				</div>
+
+				<div class="linha">
+					<label>Mensagem:*</label>
+					<span>
+						<textarea rows="10" cols="40" maxlength="500" width="200"class="input-class" placeholder="Digite aqui sua mensagem"></textarea>
+					</span>	
 				</div>		
-			
+								 
+				<div class="linha">
 
-				<div class="inputs">
-					<span>
-						<td><input type="text" name="nome" size="40"><br/></td>
-						</span>
-					<span>
-						<td><input type="text" name="nome" size="40"> <br /></td>
-					</span>
-					<span>
-						<textarea rows="10" cols="40" maxlength="500"></textarea>
-						</textarea>
-					</span>
-				</div>		 
-
-
-				<div id="formulario" class="colunas">
 					<label>Estado:</label>
-				</div>
-
-
-				<div class="inputs">
-					<span>
-						<select>
-							<option value="">-Escolha-</option>
-							<option value="">Acre</option>
-							<option value="">Alagoas</option>
-							<option value="">Amapá</option>
-							<option value="">Amazonas</option>
-							<option value="">Bahia</option>
-							<option value="">Ceará</option>
-							<option value="">Distrito Federal(Brasília)</option>
-							<option value="">Espírito Santo</option>
-							<option value="">Goiás</option>
-							<option value="">Maranhão</option>
-							<option value="">Mato Grosso</option>
-							<option value="">Mato Grosso do Sul</option>
-							<option value="">Minas Gerais</option>
-							<option value="">Pará</option>
-							<option value="">Paraíba</option>
-							<option value="">Pernambuco</option>
-							<option value="">Piauí</option>
-							<option value="">Rio Grande do Norte</option>
-							<option value="">Rio Grande do Sul</option>
-							<option value="">Rio de Janeiro</option>
-							<option value="">Rondônia</option>
-							<option value="">Roraima</option>
-							<option value="">Santa Catarina</option>
-							<option value="">São Paulo</option>		
-							<option value="">Sergipe</option>
-							<option value="">Tocantins</option>
-						</select>	 
-					</span>
-				</div>
 					
+					<select>
+						<option value="x">- Escolha -</option>
+						<option value="x">Acre</option>
+						<option value="x">Alagoas</option>
+						<option value="x">Amapá</option>
+						<option value="x">Amazonas</option>
+						<option value="x">Bahia</option>
+						<option value="x">Ceará</option>
+						<option value="x">Distrito Federal(Brasília)</option>
+						<option value="x">Espírito Santo</option>
+						<option value="x">Goiás</option>
+						<option value="x">Maranhão</option>
+						<option value="x">Mato Grosso</option>
+						<option value="x">Mato Grosso do Sul</option>
+						<option value="x">Minas Gerais</option>
+						<option value="x">Pará</option>
+						<option value="x">Paraíba</option>
+						<option value="x">Pernambuco</option>
+						<option value="x">Piauí</option>
+						<option value="x">Rio Grande do Norte</option>
+						<option value="x">Rio Grande do Sul</option>
+						<option value="x">Rio de Janeiro</option>
+						<option value="x">Rondônia</option>
+						<option value="x">Roraima</option>
+						<option value="x">Santa Catarina</option>
+						<option value="x">São Paulo</option>		
+						<option value="x">Sergipe</option>
+						<option value="x">Tocantins</option>
+					</select>	 
+					
+				</div>
+				
 				<div id="pergunta">
 					<label><strong>Deseja receber a <br>resposta por Email ? :</strong></label>
 				</div> 
 
 				<div class="radio_button">
-					<input type="radio" name="sim" id="Sim" value="Sim">
-					<strong>Sim</strong>
-					<input type="radio" name="não" id="Não" value="Não">
-					<for="Não"><strong>Não</strong>
+					<input type="radio" name="sim" id="Sim" value="Sim">Sim
+					<input type="radio" name="sim" id="nao" value="Não">Não
 				</div>
-					
+						
 				<div class="enviar">
 					<button>
 						Enviar
 					</button>
 				</div>
-			</div>
+
+			</form>
 		</div>
 							 
 		<footer>
+
 			<span>
 				Desenvolvido por : <strong>Lucas Castro</strong>
 			</span>
+
 			<span>
 			  Contato: <a href="http://www.gmail.com.br"> lucascastro.lemaf@gmail.com</a>
 			</span>
+
 			<span>
 			  Mais informações em: <a href="http://www.ti.lemaf.ufla.br/"><strong>Lemaf</strong></a> / <a href="http://www.ufla.br/"><strong>Ufla</strong></a> 
 			</span>
+			-
 			<span id="ano_pagina">2015</span>
 		</footer>
 
+	</div>
 
 </body>
 </html>
