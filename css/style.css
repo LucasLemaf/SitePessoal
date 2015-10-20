@@ -261,8 +261,11 @@ p {
 	margin: 20px 0px 0px 110px;
 }
 
-.radio_button {
-	margin: -16px -50px 20px 300px;
+#radio_button {
+	margin: -16px 0px 0px 322px;
+}
+#radio_button span {
+	margin: 0px 0px 0px 34px;
 }
 
 .enviar {
