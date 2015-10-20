@@ -1,3 +1,4 @@
+/* o asterisco representa tudo da Pagina , ou seja um padrão que todas paginas vão receber */
 * {
 	margin: 0;
 	padding: 0;
@@ -17,7 +18,7 @@ body {
 	background: #ccc ;
 }
 
-#wrapper {
+.wrapper {
 	position: absolute;
 	width: 900px;
 	left: 50%;
@@ -25,31 +26,20 @@ body {
 	padding: 10px 0;
 }
 
+.conteudo {
+	padding: 47px 30px;
+	min-height: 500px;
+	background-color: #FFF;
+}
+
+/** Cabeçalho */
+
 header {
 	display: block;
 	background-color: #FFF; 
 	height: 100px;
 	border-bottom: solid 1px #05036B;
 }
-
-#conteudo {
-	min-height: 500px;
-	background-color: #FFF;
-	padding-top: 30px; 
-}
-#conteudoCurriculo {
-	min-height: 2050px;
-	background-color: #FFF;
-	padding-top: 30px; 
-}
-
-#conteudoContato {
-	min-height: 825px;
-	background-color: #FFF;
-	padding-top: 30px; 
-}
-
-
 
 header #logo {
 	display: block;
@@ -97,6 +87,8 @@ header nav ul li.selecionado a {
 	border-bottom: solid 4px #05036B;
 }
 
+/** Rodapé */
+
 footer {
 	margin: auto;
 	width: 100%;
@@ -111,7 +103,7 @@ footer span {
 	padding-right: 20px;
 }
 
-footer span#anoPagina {
+footer span#ano_pagina {
 	display: block;
 	float: right;
 }
@@ -120,12 +112,9 @@ footer a {
 	color: #FFF;
 }
 
-section {
-	padding: 20px 30px;
-}
+/** Conteúdo Geral do Site */
 
 h1, h2 {
-	margin-bottom: 10px; 
 	color: #05036B;
 }
 
@@ -134,246 +123,170 @@ p {
 	color: #555;
 }
 
-
-#afastamento {
-
-	margin: 10px; 
+.clearfix {
+	overflow: auto;
 }
 
-
-#objetivos {
-
-	width: 50%;
-
-	height: 200px;
-
-	position: absolute;
-
-	left: 400px;
-
-	top: 250px;
-
-	padding: 0;
+/** Página Inicial */
+#pagina_inicial h1, #pagina_inicial h2 {
+	margin: 40px 0px 10px 0px;
 }
 
-#titulo {
-
-	width: 50%;
-
-	height: 200px;
-
-	position: absolute;
-
-	left: 400px;
-
-	top: 160px;
-}
+/** Currículo */
 
 #foto {
-	width: 1px;
-
-	position: absolute;
-
-	left: 50px;
-
-	top: 160px;
-
-	border: 0;
+	position: relative;
+	width: 250px;
+	height: 200px;
+	overflow: hidden;
+	margin-bottom: 15px;
 }
 
-#informacoespessoais {
-
-	width: 900px;
-
+#foto img {
 	position: absolute;
+	left: 43%;
+	top: 75%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
 
-	left: 50px;
+#curriculo h1, #curriculo h2 {
+	margin-bottom: 20px;
+	height: 25px;
+}
 
-	top: 370px;
+#curriculo fieldset {
+	border: none;
+	border-radius: 15px;
+	padding: 15px;
+	background-color: #CDE1E4;
+}
+
+#experiencias h1 {
+	margin-bottom: 20px;
+	height: 40px;
+	margin: 35px 0px 0px 232px;
+}
+
+#experiencias fieldset {
+	border: none;
+	border-radius: 15px;
+	padding: 15px;
+	background-color: #CDE1E4;
+	margin: 33px 0px 0px 0px;
+}
+
+#experiencias span {
+	color: #555;
+	line-height: 1.5; 
+}
+
+#experiencias fieldset label {
+	font-weight: bold;
+	text-align: right;
+}
+
+#dados_pessoais {
+	float: left;
+	font-size: 80%;
+}
+
+#dados_pessoais fieldset {
+	border: none;
+	width: 300px;
+	background-color: #FFF;
+	margin-left: -9%;
+}
+
+#dados_pessoais fieldset div {
+	overflow: auto;
+}
+
+#dados_pessoais fieldset label {
+	float: left;
+	font-weight: bold;
+    text-align: right;
+    width: 72px;
+    display: table;
+    padding: 2px 6px;
+}
+
+#dados_pessoais span {
+	color: #555;
+}
+
+
+/** Contato */
+
+#contato h1 {
+	text-align: center;
+	margin: 0px 0px 50px 0px;
+}
+
+.linha {
+	font-weight: bold;
+	line-height: 2.5;
+	margin-left: 10px;
+	margin-top: 10px;
+	overflow: auto;
 	
-	line-height: 1.5;
 }
 
-#cargos {
-
-	width: 55%;
-
-	height: 800px;
-
-	position: absolute;
-
-	left: 225px;
-
-	top: 810px;
+.linha span {
+	float: right;
+	margin: 10px 200px 0px 0px;
+}
+.linha label {
+	margin: 2px 0px 0px 180px;
+	text-align: right;
+	font-weight: bold;
+	float: left;
+	width: 90px;
 }
 
-#titulos {
-
-	width: 900px;
-
-	height: 800px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 743px;
+.linha select {
+	color: #555;
+	float: left;
+	margin: 10px 0px 0px 13px;
+	padding: 5px;
 }
 
-#cargoss {
-
-	width: 55%;
-
-
-	position: absolute;
-
-	left: 225px;
-
-	top: 1240px;
-
+.input-class {
+	padding: 5px;
+	margin: 0px 0px 5px 0px;
 }
 
-#titulosss {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 1600px;
+#pergunta {
+	margin: 20px 0px 0px 110px;
 }
 
-#formacao {
-
-	width: 55%;
-
-	position: absolute;
-
-	left: 225px;
-
-	top: 1680px;
+#radio_button {
+	margin: -16px 0px 0px 322px;
+}
+#radio_button span {
+	margin: 0px 0px 0px 34px;
 }
 
-#formacaos {
-
-	width: 55%;
-
-	position: absolute;
-
-	left: 225px;
-
-	top: 1870px;
+.enviar {
+	margin-left: 485px;
+	margin-top: 35px;
+	height: 50px;
+	width: 0px;
+	
 }
 
-#mensagem {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 240px;
+.enviar button {
+	color: #555;
+	font-size: 28px;
+	border-bottom: solid 5px #05036B;
+	/* uma outra cor para o botão #425692 */
+	font-weight: bold;
+	margin-left: 120px;
+	padding: 5px 5px 5px 5px;
 }
 
-#enviaremail {
 
-	/*width: 900px;*/
 
-	position: absolute;
 
-	left: 150px;
 
-	top: 412px;
-
-	margin: 
-}
-
-#caixasdetexto {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 415px;
-}
-
-#caixatexto {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 447px;
-}
-
-#caixamensagem {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 250px;
-
-	top: 480px;
-}
-
-#estado {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 150px;
-
-	top: 693px;
-}
-
-#combobox {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 335px;
-
-	top: 695px;
-}
-
-#resposta {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 150px;
-
-	top: 800px;
-}
-
-#simounao {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 470px;
-
-	top: 800px;
-}
-
-#button {
-
-	width: 900px;
-
-	position: absolute;
-
-	left: 550px;
-
-	top: 880px;
-}

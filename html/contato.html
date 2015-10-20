@@ -1,140 +1,126 @@
 <html>
 <head>
-  <meta charset='utf-8'>
-	<title>Currículo</title>
+	<meta charset='utf-8'>
+	<title>Contato</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 	
-  <div id="wrapper">
-    
-      <header>
+	<div class="wrapper">
+		
+		<header>
+			<a id="logo" href="inicio.html">
+				<img src="../img/download.jpg"> 
+			</a>
+			<nav>
+				<ul>
+					<li><a href="inicio.html">Início</a></li>
+					<li><a href="curriculo.html">Currículo</a></li>
+					<li class="selecionado"><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</header> 
+	
+		<div id="contato" class="conteudo">
+					
+			<h1>Envie uma Mensagem</h1>	
 
-        <a id="logo" href="inicio.html">
+			<form>
+				<div class="linha">						
+					<label>Nome:*</label>
+					<span>
+						<td><input type="text" class="input-class" name="nome" size="40"placeholder="Digite aqui seu nome"></td>
+					</span>
+				</div>
 
-          <img src="../img/download.jpg">
+				<div class="linha">
+					<label>Email:*</label>	
+					<span>
+						<td><input type="email" class="input-class"name="nome" size="40" placeholder="Digite aqui seu e-mail"></td>
+					</span>
+				</div>
 
-        </a>
+				<div class="linha">
+					<label>Mensagem:*</label>
+					<span>
+						<textarea rows="10" cols="40" maxlength="500" width="200"class="input-class" placeholder="Digite aqui sua mensagem"></textarea>
+					</span>	
+				</div>		
+								 
+				<div class="linha">
 
-        <nav>
+					<label>Estado:</label>
+					
+					<select>
+						<option value="x">- Escolha -</option>
+						<option value="x">Acre</option>
+						<option value="x">Alagoas</option>
+						<option value="x">Amapá</option>
+						<option value="x">Amazonas</option>
+						<option value="x">Bahia</option>
+						<option value="x">Ceará</option>
+						<option value="x">Distrito Federal(Brasília)</option>
+						<option value="x">Espírito Santo</option>
+						<option value="x">Goiás</option>
+						<option value="x">Maranhão</option>
+						<option value="x">Mato Grosso</option>
+						<option value="x">Mato Grosso do Sul</option>
+						<option value="x">Minas Gerais</option>
+						<option value="x">Pará</option>
+						<option value="x">Paraíba</option>
+						<option value="x">Pernambuco</option>
+						<option value="x">Piauí</option>
+						<option value="x">Rio Grande do Norte</option>
+						<option value="x">Rio Grande do Sul</option>
+						<option value="x">Rio de Janeiro</option>
+						<option value="x">Rondônia</option>
+						<option value="x">Roraima</option>
+						<option value="x">Santa Catarina</option>
+						<option value="x">São Paulo</option>		
+						<option value="x">Sergipe</option>
+						<option value="x">Tocantins</option>
+					</select>	 
+					
+				</div>
+				
+				<div id="pergunta">
+					<label><strong>Deseja receber a <br>resposta por Email ? :</strong></label>
+				</div> 
 
-          <ul>
+				<div id="radio_button">
+					<input type="radio" name="sim" id="Sim" value="Sim">Sim
+					<span>
+						<input type="radio" name="sim" id="nao" value="Nao">Não
+					</span>
+				</div>
+						
+				<div class="enviar">
+					<button>
+						Enviar
+					</button>
+				</div>
 
-            <li><a href="inicio.html">Início</a></li>
-            <li><a href="Currículo.html">Currículo</a></li>
-            <li class="selecionado"><a href="contato.html">Contato</a></li>
+			</form>
+		</div>
+							 
+		<footer>
 
-          </ul>
+			<span>
+				Desenvolvido por : <strong>Lucas Castro</strong>
+			</span>
 
-        </nav>
+			<span>
+			  Contato: <a href="http://www.gmail.com.br"> lucascastro.lemaf@gmail.com</a>
+			</span>
 
-      </header>
+			<span>
+			  Mais informações em: <a href="http://www.ti.lemaf.ufla.br/"><strong>Lemaf</strong></a> / <a href="http://www.ufla.br/"><strong>Ufla</strong></a> 
+			</span>
+			-
+			<span id="ano_pagina">2015</span>
+		</footer>
 
-
-    <div id="conteudoContato">
-  
-  	 <div id="mensagem">
-  		  <h1><label>Envie uma Mensagem</label></h1>
-  	 </div>
-  	
-  	 <div id="enviaremail">
-    	 <p><strong>Nome*:</strong></p>
-    	 <p><strong>Email*:</strong></p>
-       <br>
-    	 <p><strong>Mensagem*:</strong></p>
-       </br>	
-  	 </div>
-
-  	 <div id="caixasdetexto">
-     		 <td><input type="text" name="nome" size="40"> <br /></td>
-     	  </div>
-
-     	  <div id="caixatexto">
-     		 <td><input type="text" name="nome" size="40"> <br /></td>
-     	  </div>
-
-     	<div id="caixamensagem">
-     		<textarea rows="10" cols="40" maxlength="500"></textarea>
-     		</textarea>
-     	</div>
-
-     	<div id="estado">
-     		<p><strong>Estado:</strong></p>
-     	</div>
-
-     	<div id="combobox">
-  		  <select>
-    		  <option value="xx">-Escolha-</option>
-    			<option value="xx">Acre</option>
-    			<option value="xx">Alagoas</option>
-    			<option value="xx">Amapá</option>
-    			<option value="xx">Amazonas</option>
-    			<option value="xx">Bahia</option>
-    			<option value="xx">Ceará</option>
-    			<option value="xx">Distrito Federal(Brasília)</option>
-    			<option value="xx">Espírito Santo</option>
-    			<option value="xx">Goiás</option>
-    			<option value="xx">Maranhão</option>
-    			<option value="xx">Mato Grosso</option>
-      		<option value="xx">Mato Grosso do Sul</option>
-      		<option value="xx">Minas Gerais</option>
-      		<option value="xx">Pará</option>
-      		<option value="xx">Paraíba</option>
-      		<option value="xx">Pernambuco</option>
-      		<option value="xx">Piauí</option>
-      		<option value="xx">Rio Grande do Norte</option>
-      		<option value="xx">Rio Grande do Sul</option>
-      		<option value="xx">Rio de Janeiro</option>
-      		<option value="xx">Rondônia</option>
-      		<option value="xx">Roraima</option>
-      		<option value="xx">Santa Catarina</option>
-      		<option value="yy">São Paulo</option>		
-    		  <option value="xx">Sergipe</option>
-    		  <option value="xx">Tocantins</option>
-  		  </select>		
-     	</div>
-
-     	<div id="resposta">
-     		<p><strong>Deseja receber a resposta por Email ? :</strong></p>
-     	</div>
-
-     	<div id="simounao">
-     		<label for="Sim"><strong>Sim</strong></label>
-    				<input type="radio" name="sim" id="Sim" value="Sim"><br>
-    		<label for="Não"><strong>Não</strong></label>
-    				<input type="radio" name="não" id="Não" value="Não"><br><br>	
-     	</div>
-
-     	<div id="button">
-     		<button>
-     			<strong>Enviar<strong>
-     		</button>
-     	</div>
-
-
-      </div>
-
-      <footer>
-
-      <span>
-        Desenvolvido por : <strong>Lucas Castro</strong>
-      </span>
-        
-          
-      <span>
-          Contato: <a href="http://www.gmail.com.br"> lucascastro.lemaf@gmail.com</a>
-      </span>
-
-      <span>
-          Mais informações em: <a href="http://www.ti.lemaf.ufla.br/"><strong>Lemaf</strong></a> / <a href="http://www.ufla.br/"><strong>Ufla</strong></a> 
-      </span>
-
-      <span id="anoPagina">2015</span>
-    </footer>
-      
-  	</div>
-
-  </div>
+	</div>
 
 </body>
 </html>
