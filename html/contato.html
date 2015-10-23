@@ -25,25 +25,27 @@
 					
 			<h1>Envie uma Mensagem</h1>	
 
-			<form>
-				<div class="linha">						
-					<label>Nome:*</label>
+			<form method="post" action"">
+
+				<div class="linha" >						
+					<label for="nome">Nome:*</label>
 					<span>
-						<td><input type="text" class="input-class" name="nome" size="40"placeholder="Digite aqui seu nome"></td>
+						<td><input type="text" class="input-class" name="nome" id="nome" required name=nome size="40"placeholder="Digite aqui seu nome"></td>
 					</span>
 				</div>
 
 				<div class="linha">
 					<label>Email:*</label>	
 					<span>
-						<td><input type="email" class="input-class"name="nome" size="40" placeholder="Digite aqui seu e-mail"></td>
+						<td><input type="email" id="email" class="input-class" name="email" required email=email size="40" placeholder="Digite aqui seu e-mail"></td>
 					</span>
 				</div>
 
 				<div class="linha">
 					<label>Mensagem:*</label>
 					<span>
-						<textarea rows="10" cols="40" maxlength="500" width="200"class="input-class" placeholder="Digite aqui sua mensagem"></textarea>
+						<textarea name="mensagem" id="mensagem"
+						required mensagem=mensagem rows="10" cols="40" maxlength="500" width="200"class="input-class" placeholder="Digite aqui sua mensagem"></textarea>
 					</span>	
 				</div>		
 								 
@@ -76,7 +78,7 @@
 						<option value="x">Rondônia</option>
 						<option value="x">Roraima</option>
 						<option value="x">Santa Catarina</option>
-						<option value="x">São Paulo</option>		
+						<option value="x">São Paulo</option>	
 						<option value="x">Sergipe</option>
 						<option value="x">Tocantins</option>
 					</select>	 
@@ -95,12 +97,20 @@
 				</div>
 						
 				<div class="enviar">
-					<button>
+					<button onclick"float_mensagem">
 						Enviar
 					</button>
+
 				</div>
 
 			</form>
+
+			<div id="float_mensagem">
+				<fieldset>
+					<img src="../img/mensagem_ok.png">
+				</fieldset>
+			</div>
+
 		</div>
 							 
 		<footer>
