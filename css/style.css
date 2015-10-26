@@ -229,14 +229,14 @@ p {
 	line-height: 2.5;
 	margin-left: 10px;
 	margin-top: 10px;
-	overflow: auto;
-	
+	overflow: auto;	
 }
 
 .linha span {
 	float: right;
 	margin: 10px 200px 0px 0px;
 }
+
 .linha label {
 	margin: 2px 0px 0px 180px;
 	text-align: right;
@@ -264,6 +264,7 @@ p {
 #radio_button {
 	margin: -16px 0px 0px 322px;
 }
+
 #radio_button span {
 	margin: 0px 0px 0px 34px;
 }
@@ -272,8 +273,7 @@ p {
 	margin-left: 485px;
 	margin-top: 35px;
 	height: 50px;
-	width: 0px;
-	
+	width: 0px;	
 }
 
 .enviar button {
@@ -292,10 +292,6 @@ p {
 	padding: 10px;
 	border-radius: 25px;
 	background-color: #05036B;
-	display: none;
-
-
-
-	
+	display: none;	
 }
 
