@@ -1,6 +1,7 @@
 <html>
 <head>
 	<meta charset='utf-8'>
+	<script type="text/javascript" src="../js/validacao.js"></script>
 	<title>Contato</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
@@ -23,21 +24,36 @@
 	
 		<div id="contato" class="conteudo">
 					
-			<h1>Envie uma Mensagem</h1>	
+			<h1>Envie uma Mensagem</h1>
 
-			<form>
+			<div id="mensagem_erro">
+				<fieldset>
+					Favor preencha os campos corretamente
+					<img src="../img/icone_cancelar.png">
+				</fieldset>
+
+			</div>
+
+			<div id="mensagem_sucesso">
+				<fieldset>
+					Mensagem enviada com sucesso
+					<img src="../img/icone_ok.png">
+				</fieldset>
+			</div>
+
+			<form name="form">
 
 				<div class="linha" >						
 					<label>Nome:*</label>
 					<span>
-						<td><input type="text" class="input-class" name="nome" id="nome" required name=nome size="40"placeholder="Digite aqui seu nome"></td>
+						<td><input type="text"  onkeypress="return txtBoxFormat(event);" class="input-class" name="nome" id="nome" required name=nome size="40"placeholder="Digite aqui seu nome"></td>
 					</span>
 				</div>
 
 				<div class="linha">
 					<label>Email:*</label>	
 					<span>
-						<td><input type="email" id="email" class="input-class" name="email" required email=email size="40" placeholder="Digite aqui seu e-mail"></td>
+						<td><input type="email" onblur="validacaoEmail(form.email)" id="email" class="input-class" name="email" required email=email size="40" placeholder="Digite aqui seu e-mail"></td>
 					</span>
 				</div>
 
@@ -96,7 +112,7 @@
 				</div>
 						
 				<div class="enviar">	
-					<button>
+					<button onclick="validar()">
 						Enviar
 					</button>
 				</div>
@@ -108,7 +124,7 @@
 		<footer>
 
 			<span>
-				Desenvolvido por : <strong>Lucas Castro</strong>
+				Desenvolvido por : <strong>Lucas Castro </strong>
 			</span>
 
 			<span>

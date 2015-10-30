@@ -295,3 +295,44 @@ p {
 	display: none;	
 }
 
+#mensagem_erro {
+	color: #BD2D2D;
+	text-align: center;
+	display: none;
+	margin: 1px;
+}
+
+#mensagem_erro fieldset {
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	margin: -28px 197px 0px 290px;
+	background-color: #BFBFBF;
+}
+
+#mensagem_erro img {
+	margin: -7px 2px;
+	padding: 6px 0px 0px 0px;
+}
+
+#mensagem_sucesso {
+	color: green;
+	text-align: center;
+	display: none;
+	margin: 1px;
+}
+
+#mensagem_sucesso fieldset {
+
+	border-radius: 5px;
+	padding: 5px;
+	margin: -28px 197px 0px 290px;
+	background-color: #ABC3AB;
+	border: none;
+}
+
+#mensagem_sucesso img {
+	margin: -7px 2px;
+	padding: 6px 0px 0px 0px;
+
+}
