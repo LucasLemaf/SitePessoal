@@ -26,7 +26,7 @@
 					
 			<h1>Envie uma Mensagem</h1>
 
-			<div id="mensagem_erro">
+			<div class="mensagem_erro">
 				<fieldset>
 					Favor preencha os campos corretamente
 					<a id="logo" onclick="sumir_msg()">
@@ -36,7 +36,7 @@
 
 			</div>
 
-			<div id="mensagem_sucesso">
+			<div class="mensagem_sucesso">
 				<fieldset>
 					Mensagem enviada com sucesso
 					<a id="logo" onclick="sumir_msg()">
@@ -65,19 +65,10 @@
 					<label>Mensagem:*</label>
 					<span>
 						<textarea name="mensagem" id="mensagem"
-						required= "required" rows="10" cols="40" maxlength="250" width="200"class="input-class" placeholder="Digite aqui sua mensagem"></textarea>
+						required= "required" rows="10" cols="40" width="200"class="input-class" placeholder="Digite aqui sua mensagem"></textarea>
 					</span>	
 				</div>
-
-				<div id="limite_caracter">
-					<fieldset>
-						O limite é de 250 caracteres.
-						<a id="logo">
-							<img src="../img/icone_cancelar.png">
-						</a>
-					</fieldset>
-				</div>		
-								 
+						 
 				<div class="linha">
 
 					<label>Estado:</label>
@@ -125,7 +116,7 @@
 				</div>
 						
 				<div class="enviar">	
-					<button onclick="validar()">
+					<button type="button" onclick="validar()">
 						Enviar
 					</button>
 				</div>
