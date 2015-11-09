@@ -334,5 +334,23 @@ p {
 #mensagem_sucesso img {
 	margin: -7px 2px;
 	padding: 6px 0px 0px 0px;
+}
 
+#limite_caracter {
+	color: #BD2D2D;
+	display: none;
+}
+
+#limite_caracter fieldset {
+	margin:0px 196px 0px 399px;
+	border-radius: 5px;
+	padding: 3px;
+	background-color: #BFBFBF;
+	border: none;
+}
+
+#limite_caracter img {
+
+	margin: -7px 2px;
+	padding: 6px 0px 0px 0px;	
 }

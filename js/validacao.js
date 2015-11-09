@@ -1,51 +1,33 @@
-// Valida se os campos estão preenchidos
+ //Valida se os campos estão preenchidos
 function validar() 
-{
+{	
+	var reg_nome = /[a-zA-Z\s]+$/;// apenas letras [a-z\s]+$
+	var reg_email = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;  //email [a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$
+	var limitemaximo = 250;
 	var nome = form.nome.value;
 	var email = form.email.value;
 	var mensagem = form.mensagem.value;
 
-	if (isNaN(nome)== "") {
+	 if (!reg_nome.test(nome)) { 
+	
 		document.getElementById('mensagem_erro').style.display = 'block';
 	}
-	if (isNaN(nome)== false) {
-		document.getElementById('mensagem_erro').style.display = 'block';	
-	};
 
-	if (email == "") {
-		document.getElementById('mensagem_erro').style.display = 'block';	
+	if (!reg_email.test(email)) {
+
+		document.getElementById('mensagem_erro').style.display = 'block';
 	}
 
-	if (mensagem == "") {
-		document.getElementById('mensagem_erro').style.display = 'block';	
-	};
+	if (mensagem > limitemaximo) {
+
+		
+	}
 }
 
-// Bloqueia numero no campo Nome 
-function txtBoxFormat(evtKeyPress) 
+function sumir_msg() 
 {
-	var nTecla;
-
-	if(document.all) { 
-
-	nTecla = evtKeyPress.keyCode;
-
-	} 
-		else if(document.layers) { 
-		nTecla = evtKeyPress.which;
-
-	} 
-		else {
-		nTecla = evtKeyPress.which;
-		if (nTecla == 8) {
-			return true;
-		}
-	}
-
-		if (nTecla != 8)
-	  		return ((nTecla <= 47) || (nTecla >= 58)); 
-		else
-
-  	return true;
+	if (document.getElementById('mensagem_erro').style.display = 'block') 
+	{
+		document.getElementById('mensagem_erro').style.display = 'none'
+	};
 }
-// Valida e-mail no campo e-mail 
