@@ -15,7 +15,8 @@ function validar()
 
 		
 		msg.children[0].innerHTML = "Favor preencher o campo 'NOME' corretamente";
-		msg.className = "mensagem_erro";	
+		msg.className = "mensagem_erro";
+		setTimeout(sumir_msg, 10000);
 		return;
 	}
 
@@ -24,6 +25,7 @@ function validar()
 		
 		msg.children[0].innerHTML = "Favor preencher o campo 'EMAIL' corretamente";
 		msg.className = "mensagem_erro";
+		setTimeout(sumir_msg, 10000);
 		return;
 	}
 	
@@ -32,6 +34,7 @@ function validar()
 		
 		msg.children[0].innerHTML = "O campo 'Mensagem' tem limite de 250 caracteres";
 		msg.className = "mensagem_erro";
+		setTimeout(sumir_msg, 10000);
 		return;
 	}
 
@@ -40,35 +43,35 @@ function validar()
 		
 		msg.children[0].innerHTML = "O campo Mensagem está vazio";
 		msg.className = "mensagem_erro";
+		setTimeout(sumir_msg, 10000);
 		return;
 	}
 		
 		msg.className = "mensagem_sucesso";
 		msg.children[0].innerHTML = "Mensagem enviada com Sucesso";
+		setTimeout(sumir_msg, 10000);
+		return;
 }
 
-//function exibir_msg(class_name) {
+ // "Favor preencher os campos";
+//	"Favor preencher os campos corretamente";
+//	"Favor preencher o campo NOME";
+//	"Favor preencher o campo EMAIL";
+//	"Favor preencher o campo Mensagem";
+//	"Favor preencher o campo NOME corretamente";
+//	"Favor preencher o campo EMAIL corretamente";
 
-//	document.getElementsByClassName("").innerHTML = "Favor preencher os campos";
-//	document.getElementsByClassName("").innerHTML = "Favor preencher os campos corretamente";
-//	document.getElementsByClassName("").innerHTML = "Favor preencher o campo NOME";
-//	document.getElementsByClassName("").innerHTML = "Favor preencher o campo EMAIL";
-//	document.getElementsByClassName("").innerHTML = "Favor preencher o campo Mensagem";
-//	document.getElementsByClassName("").innerHTML = "Favor preencher o campo NOME corretamente";
-//	document.getElementsByClassName("").innerHTML = "Favor preencher o campo EMAIL corretamente";
-
-//	setTimeout(sumir_msg, 100000);
-//}
 
 function sumir_msg() 
 {
+	var msg = document.getElementById("a");
 	
-	if (document.getElementsByClassName("")[0].style.display = 'block') {
-		document.getElementsByClassName("")[0].style.display = 'none'
+	if (msg.style.display = 'block') {
+		msg.style.display = 'none'
  	};
 
- 	if (document.getElementsByClassName("")[0].style.display = 'block') {
- 		document.getElementsByClassName("")[0].style.display = 'none';
- 	}
+ 	if (msg.style.display = 'block') {
+ 		msg.style.display = 'none';
+ 	};
 }
 
