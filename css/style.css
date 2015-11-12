@@ -286,7 +286,7 @@ p {
 	padding: 5px 5px 5px 5px;
 }
 
-#float_mensagem fieldset{
+#float_mensagem fieldset {
 	margin: -500px 0px 0px 200px;
 	position: absolute;
 	padding: 10px;
@@ -298,14 +298,14 @@ p {
 .mensagem_erro {
 	color: #666;
 	text-align: center;
-	display: none;
+	display: block;
 	margin: 1px;
 }
 
 .mensagem_erro fieldset {
 	border: none;
 	border-radius: 5px;
-	padding: 5px;
+	padding: 10px 5px 9px 5px;
 	margin: -28px 197px 0px 290px;
 	background-color: #F7CBCB;
 }
@@ -318,14 +318,14 @@ p {
 .mensagem_sucesso {
 	color: green;
 	text-align: center;
-	display: none;
+	display: block;
 	margin: 1px;
 }
 
 .mensagem_sucesso fieldset {
 
 	border-radius: 5px;
-	padding: 5px;
+	padding: 10px 5px 9px 5px;
 	margin: -33px 197px 0px 290px;
 	background-color: #ABC3AB;
 	border: none;
@@ -334,4 +334,9 @@ p {
 .mensagem_sucesso img {
 	margin: -7px 2px;
 	padding: 6px 0px 0px 0px;
+}
+
+#a {
+
+	display: none;
 }
