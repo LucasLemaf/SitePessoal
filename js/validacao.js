@@ -13,47 +13,55 @@ function validar()
 
 	if (!reg_nome.test(nome)) {
 
-		
-		msg.children[0].innerHTML = "Favor preencher o campo 'NOME' corretamente";
+		msg.children[1].style.display = 'block';
+		msg.children[2].style.display = 'none';
+		msg.children[0].innerHTML = "Favor preencher o campo 'Nome' corretamente";
 		msg.className = "mensagem_erro";
-		setTimeout(sumir_msg, 10000);
+		setTimeout(sumir_msg, 100000);
 		return;
 	}
 
 	if (!reg_email.test(email)) {
 
-		
-		msg.children[0].innerHTML = "Favor preencher o campo 'EMAIL' corretamente";
+		msg.children[1].style.display = 'block';
+		msg.children[2].style.display = 'none';
+		msg.children[0].innerHTML = "Favor preencher o campo 'Email' corretamente";
 		msg.className = "mensagem_erro";
-		setTimeout(sumir_msg, 10000);
+		setTimeout(sumir_msg, 100000);
 		return;
 	}
 	
 	if (mensagem.length > limitemaximo) {
 
-		
+		msg.children[1].style.display = 'block';
+		msg.children[2].style.display = 'none';
 		msg.children[0].innerHTML = "O campo 'Mensagem' tem limite de 250 caracteres";
 		msg.className = "mensagem_erro";
-		setTimeout(sumir_msg, 10000);
+		setTimeout(sumir_msg, 100000);
 		return;
 	}
 
 	if (mensagem.length == "") {
 
-		
-		msg.children[0].innerHTML = "O campo Mensagem está vazio";
+		msg.children[1].style.display = 'block';
+		msg.children[2].style.display = 'none';
+		msg.children[0].innerHTML = "Favor preencher o campo 'Mensagem'";
 		msg.className = "mensagem_erro";
-		setTimeout(sumir_msg, 10000);
+		setTimeout(sumir_msg, 100000);
 		return;
 	}
-		
+
 		msg.className = "mensagem_sucesso";
 		msg.children[0].innerHTML = "Mensagem enviada com Sucesso";
-		setTimeout(sumir_msg, 10000);
+		setTimeout(sumir_msg, 100000);
+		msg.children[1].style.display = 'none';
+		msg.children[2].style.display = 'block';
 		return;
+
+		msg.children[1].style.display = 'block';
 }
 
- // "Favor preencher os campos";
+//  "Favor preencher os campos";
 //	"Favor preencher os campos corretamente";
 //	"Favor preencher o campo NOME";
 //	"Favor preencher o campo EMAIL";
@@ -68,10 +76,6 @@ function sumir_msg()
 	
 	if (msg.style.display = 'block') {
 		msg.style.display = 'none'
- 	};
-
- 	if (msg.style.display = 'block') {
- 		msg.style.display = 'none';
  	};
 }
 

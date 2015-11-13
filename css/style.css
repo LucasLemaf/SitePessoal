@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: arial,tahoma,verdana;
-}
+} 
 /*
 Cores
 Azul escuro: #05036B
@@ -305,14 +305,18 @@ p {
 .mensagem_erro fieldset {
 	border: none;
 	border-radius: 5px;
-	padding: 10px 5px 9px 5px;
-	margin: -28px 197px 0px 273px;
+	padding: 11px 23px 8px 5px;
+	margin: -22px 196px 8px 228px;
 	background-color: #F7CBCB;
 }
 
 .mensagem_erro img {
-	margin: -7px 2px;
+	margin:-45px 0px 16px 609px;
 	padding: 6px 0px 0px 0px;
+}
+
+.mensagem_erro fieldset img {
+	margin: 0px 50px 0px 10px; 
 }
 
 .mensagem_sucesso {
@@ -323,7 +327,6 @@ p {
 }
 
 .mensagem_sucesso fieldset {
-
 	border-radius: 5px;
 	padding: 10px 5px 9px 5px;
 	margin: -33px 197px 0px 273px;
@@ -332,11 +335,11 @@ p {
 }
 
 .mensagem_sucesso img {
-	margin: -7px 2px;
-	padding: 6px 0px 0px 0px;
+	margin: -41px -117px 0px 595px;
+	padding: 11px 23px 8px 5px;
 }
 
 #a {
-
 	display: none;
 }
+
