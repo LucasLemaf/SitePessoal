@@ -284,6 +284,7 @@ p {
 	font-weight: bold;
 	margin-left: 120px;
 	padding: 5px 5px 5px 5px;
+	cursor: pointer;
 }
 
 #float_mensagem fieldset {
@@ -299,47 +300,64 @@ p {
 	color: #666;
 	text-align: center;
 	display: block;
-	margin: 1px;
+	margin: -21px;
 }
 
 .mensagem_erro fieldset {
 	border: none;
 	border-radius: 5px;
-	padding: 11px 23px 8px 5px;
-	margin: -22px 196px 8px 228px;
+	padding: 11px 0px 8px 29px;
+	margin: -23px 201px 29px 250px;
 	background-color: #F7CBCB;
 }
 
 .mensagem_erro img {
-	margin:-45px 0px 16px 609px;
+	margin: -61px -36px 0px -375px;
 	padding: 6px 0px 0px 0px;
 }
 
 .mensagem_erro fieldset img {
-	margin: 0px 50px 0px 10px; 
+	margin: 0px 50px 0px 10px;
 }
 
 .mensagem_sucesso {
 	color: green;
 	text-align: center;
 	display: block;
-	margin: 1px;
+	margin: 0px 0px -21px 0px;
 }
 
 .mensagem_sucesso fieldset {
+	background: url(../img/iconeok.png);
+	background-repeat: no-repeat;
+	background-position: 10% 42%;
 	border-radius: 5px;
-	padding: 10px 5px 9px 5px;
-	margin: -33px 197px 0px 273px;
+	padding: 11px 0px 8px 15px;
+	margin: -23px 179px 29px 228px;
 	background-color: #ABC3AB;
 	border: none;
+
 }
 
 .mensagem_sucesso img {
-	margin: -41px -117px 0px 595px;
-	padding: 11px 23px 8px 5px;
+	margin: -39px -117px 0px -319px;
+	padding: 5px -0px 19px 181px;
 }
 
 #a {
 	display: none;
+}
+
+#a button {
+	margin: -66px -14px 15px 454px;
+	background-color: transparent;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+
+#a img {
+	margin: -61px 406px 1px 75px;
 }
 

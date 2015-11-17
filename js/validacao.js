@@ -13,62 +13,62 @@ function validar()
 
 	if (!reg_nome.test(nome)) {
 
-		msg.children[1].style.display = 'block';
-		msg.children[2].style.display = 'none';
+		document.getElementById('nome').style.borderColor = 'red';
 		msg.children[0].innerHTML = "Favor preencher o campo 'Nome' corretamente";
 		msg.className = "mensagem_erro";
 		setTimeout(sumir_msg, 100000);
 		return;
 	}
+	else {
+
+		document.getElementById('nome').style.borderColor = '#fff';
+	}
+
 
 	if (!reg_email.test(email)) {
 
-		msg.children[1].style.display = 'block';
-		msg.children[2].style.display = 'none';
+		document.getElementById('email').style.borderColor = 'red';
 		msg.children[0].innerHTML = "Favor preencher o campo 'Email' corretamente";
 		msg.className = "mensagem_erro";
 		setTimeout(sumir_msg, 100000);
 		return;
 	}
+	else {
+
+		document.getElementById('email').style.borderColor = '#ccc';
+	}
 	
 	if (mensagem.length > limitemaximo) {
 
-		msg.children[1].style.display = 'block';
-		msg.children[2].style.display = 'none';
+		document.getElementById('email').style.borderColor = 'red';
 		msg.children[0].innerHTML = "O campo 'Mensagem' tem limite de 250 caracteres";
 		msg.className = "mensagem_erro";
 		setTimeout(sumir_msg, 100000);
 		return;
 	}
+	else {
+
+		document.getElementById('email').style.borderColor = '#ccc';
+	}
 
 	if (mensagem.length == "") {
 
-		msg.children[1].style.display = 'block';
-		msg.children[2].style.display = 'none';
+		document.getElementById('mensagem').style.borderColor = 'red';
 		msg.children[0].innerHTML = "Favor preencher o campo 'Mensagem'";
 		msg.className = "mensagem_erro";
 		setTimeout(sumir_msg, 100000);
 		return;
 	}
+	else {
 
+		document.getElementById('mensagem').style.borderColor = '#ccc';
+	}
+		msg.children[2].style.display = 'none';
 		msg.className = "mensagem_sucesso";
 		msg.children[0].innerHTML = "Mensagem enviada com Sucesso";
 		setTimeout(sumir_msg, 100000);
-		msg.children[1].style.display = 'none';
-		msg.children[2].style.display = 'block';
 		return;
-
-		msg.children[1].style.display = 'block';
 }
-
-//  "Favor preencher os campos";
-//	"Favor preencher os campos corretamente";
-//	"Favor preencher o campo NOME";
-//	"Favor preencher o campo EMAIL";
-//	"Favor preencher o campo Mensagem";
-//	"Favor preencher o campo NOME corretamente";
-//	"Favor preencher o campo EMAIL corretamente";
-
 
 function sumir_msg() 
 {
