@@ -63,13 +63,13 @@
 
 	var exibirMensagem = function() {
 
-		mensagem.style.display = 'block';
+		$(mensagem).show();
 	};
 
 	var exibirMensagemSucesso = function() {
 
-		mensagem.className = "mensagem_sucesso";
-		textoMensagem.innerHTML = "Mensagem enviada com Sucesso";
+		$(mensagem).addClass("mensagem_sucesso");
+		$(textoMensagem).html("Mensagem enviada com Sucesso");
 		setTimeout(sumirMensagem, 100000);
 	};
 
@@ -77,35 +77,37 @@
 
 		var mensagemErro = "";
 
-		for (var i=0; i<mensagensErro.length; i++) {
+		for (var i = 0; i < mensagensErro.length; i++) {
 			mensagemErro += "<br/>" + mensagensErro[i];
 		}
 
-		mensagem.className = "mensagem_erro";
-		textoMensagem.innerHTML = mensagemErro;
+		$(mensagem).addClass("mensagem_erro");
+		$(textoMensagem).html(mensagemErro);
 		setTimeout(sumirMensagem, 100000);
 	};
 
 	var sumirMensagem = function() {
 		
-		if (mensagem.style.display = 'block') {
-			mensagem.style.display = 'none'
+		if ($(mensagem).show()) {
+			$(mensagem).hide()
 	 	};
 	};
 
 	var limparCamposComErro = function() {
 
-		var camposComErro = document.getElementsByClassName('campo_erro');
+		var camposComErro = $('.campo_erro');
 		
 		for (var i=0; i < camposComErro.length; i++) {
 
-			camposComErro[i].classList.remove('campo_erro');
+			$(camposComErro[i]).removeClass('campo_erro');
 		}
+
+		$(mensagem).removeClass('mensagem_sucesso');	
 	};
 
 	var validarCampoErro = function(campo) {
 
-		campo.classList.add("campo_erro");
+		$(campo).addClass("campo_erro");
 	};
 
 	// métodos e atributos públicos
