@@ -328,9 +328,10 @@ p {
 #mensagem {
 	display: none;
 	text-align: center;
-	padding: 26px 1px 0px 7px;
+	/*padding: 26px 1px 0px 7px;*/
 	margin: -23px 179px 29px 228px;
 	border-radius: 5px;
+	padding: 12px;
 }
 
 #mensagem button {

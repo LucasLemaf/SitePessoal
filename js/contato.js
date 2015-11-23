@@ -1,7 +1,7 @@
 (function() { // função Module Pattern
 
-	var mensagem = document.getElementById("mensagem");
-	var textoMensagem = document.getElementById("mensagem_texto");
+	var mensagem = $("#mensagem");
+	var textoMensagem = $("#mensagem_texto");
 
 	// Valida se os campos estão preenchidos
 	var validar = function() {
@@ -63,13 +63,13 @@
 
 	var exibirMensagem = function() {
 
-		$(mensagem).show();
+		mensagem.show();
 	};
 
 	var exibirMensagemSucesso = function() {
 
-		$(mensagem).addClass("mensagem_sucesso");
-		$(textoMensagem).html("Mensagem enviada com Sucesso");
+		mensagem.addClass("mensagem_sucesso");
+		textoMensagem.html("Mensagem enviada com Sucesso");
 		setTimeout(sumirMensagem, 100000);
 	};
 
@@ -81,15 +81,15 @@
 			mensagemErro += "<br/>" + mensagensErro[i];
 		}
 
-		$(mensagem).addClass("mensagem_erro");
-		$(textoMensagem).html(mensagemErro);
+		mensagem.addClass("mensagem_erro");
+		textoMensagem.html(mensagemErro);
 		setTimeout(sumirMensagem, 100000);
 	};
 
 	var sumirMensagem = function() {
 		
-		if ($(mensagem).show()) {
-			$(mensagem).hide()
+		if (mensagem.show('slow')) {
+			mensagem.hide('')
 	 	};
 	};
 
@@ -102,7 +102,7 @@
 			$(camposComErro[i]).removeClass('campo_erro');
 		}
 
-		$(mensagem).removeClass('mensagem_sucesso');	
+		mensagem.removeClass('mensagem_sucesso');	
 	};
 
 	var validarCampoErro = function(campo) {
