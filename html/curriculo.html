@@ -2,6 +2,7 @@
 <head>
 	<meta charset='utf-8'>
 	<title>Currículo</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 </head>
 <body>
@@ -9,19 +10,30 @@
 	<div class="wrapper">
 		
 		<header>
+			
 			<a id="logo" href="inicio.html">
+
 				<img src="../img/download.jpg"> 
 			</a>
 
 			<nav>
-				<ul>
-					<li><a href="inicio.html">Início</a></li>
-					<li class="selecionado"><a href="curriculo.html">Currículo</a></li>
-					<li><a href="contato.html">Contato</a></li>
+				<ul class="pagination">
+					<li>
+						<a href="inicio.html">
+							<span aria-hidden="true">Início</span>
+						</a>
+					</li>
+					<li class="selecionado">
+						<a href="curriculo.html">Currículo</a>
+					</li>
+
+					<li>
+						<a href="contato.html">Contato</a>
+					</li>
 				</ul>
 			</nav>
 
-		</header>	
+		</header>
 
 		
 		<div id="curriculo" class="conteudo">
@@ -123,7 +135,7 @@
 		</div>
 			</div>
 
-		<footer>
+		<footer class="container">
 
 			<span>
 				Desenvolvido por : <strong>Lucas Castro</strong>

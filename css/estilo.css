@@ -1,5 +1,5 @@
 /* o asterisco representa tudo da Pagina , ou seja um padrão que todas paginas vão receber */
-* {
+/* {
 	margin: 0;
 	padding: 0;
 	font-family: arial,tahoma,verdana;
@@ -89,7 +89,7 @@ header nav ul li.selecionado a {
 
 /** Rodapé */
 
-footer {
+/*footer {
 	margin: auto;
 	width: 100%;
 	background: #05036B;
@@ -110,9 +110,22 @@ footer span#ano_pagina {
 
 footer a {
 	color: #FFF;
+}*/
+.container {
+	margin: auto;
+	width: 100%;
+	background: #05036B;
+	color: #FFF;
+	padding: 5px;
+	box-sizing: border-box; 
+	font-size: 15px;
+	padding-right: 20px;
+	display: block;
+	float: right;
 }
 
-/** Conteúdo Geral do Site */
+/**
+ Conteúdo Geral do Site */
 
 h1, h2 {
 	color: #05036B;
@@ -128,9 +141,9 @@ p {
 }
 
 /** Página Inicial */
-#pagina_inicial h1, #pagina_inicial h2 {
+/* Retirado(Usando Bootstrap)#pagina_inicial h1 #pagina_inicial h2 {
 	margin: 40px 0px 10px 0px;
-}
+}*/
 
 /** Currículo */
 
@@ -224,7 +237,14 @@ p {
 	margin: 0px 0px 50px 0px;
 }
 
-.linha {
+.form-control {
+	width: 400px;
+}
+.form-horizontal {
+	margin:0px 0px 57px 141px;
+}
+
+/*.linha {
 	font-weight: bold;
 	line-height: 2.5;
 	margin-left: 10px;
@@ -256,14 +276,14 @@ p {
 .input_class {
 	padding: 5px;
 	margin: 0px 0px 5px 0px;
-}
+}*/
 
 #pergunta {
 	margin: 20px 0px 0px 110px;
 }
 
 #radio_button {
-	margin: -16px 0px 0px 322px;
+	margin: -25px 0px 0px 170px;
 }
 
 #radio_button span {
@@ -283,7 +303,7 @@ p {
 	border-bottom: solid 5px #05036B;
 	/* uma outra cor para o botão #425692 */
 	font-weight: bold;
-	margin-left: 120px;
+	margin-left: -55px;
 	padding: 5px 5px 5px 5px;
 	cursor: pointer;
 }
