@@ -1,40 +1,28 @@
 <html>
-<head>
-	<meta charset='utf-8'>
-	<title>Contato</title>
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
-</head>
+	<head>
+		<meta charset='utf-8'>
+		<title>Contato</title>
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	</head>
 <body>
 	
 	<div class="wrapper">
-		
+
 		<header>
-			
-			<a id="logo" href="inicio.html">
+				<a id="logo" href="inicio.html">
+					<img src="../img/download.jpg"> 
+				</a>
 
-				<img src="../img/download.jpg"> 
-			</a>
+				<ul class="nav nav-pills nav-justified">
+					<li role="presentation"><a href="inicio.html">Início</a></li>
 
-			<nav>
-				<ul class="pagination">
-					<li>
-						<a href="inicio.html">
-							<span aria-hidden="true">Início</span>
-						</a>
-					</li>
+					<li role="presentation"><a href="curriculo.html">Currículo</a></li>
 
-					<li>
-						<a href="curriculo.html">Currículo</a>
-					</li>
-
-					<li class="selecionado">
-						<a href="contato.html">Contato</a>
-					</li>
+					<li class="active" role="presentation"><a href="contato.html">Contato</a></li>
 				</ul>
-			</nav>
 
-		</header>
+			</header>
 	
 		<div id="contato" class="conteudo">
 					
@@ -42,11 +30,13 @@
 
 			<div class="alert">
 					<span></span>
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="sumirMensagem()"><span>&times;</span></button>
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="sumirMensagem()">
+						<span>&times;</span>
+					</button>
 					<span id="mensagem_texto"></span>	
 			</div>
 
-			<form name="form" class="form-horizontal">
+			<form name="form" class="form-horizontal align-center">
 
 				<div class="form-group">
 					    <label class="col-sm-2 control-label">Nome:*</label>
@@ -104,21 +94,27 @@
 					</div>
 				</div>	 
 				
-				<label><strong>Deseja receber a <br>resposta por Email ? :</strong></label>
-				
-				<div class="col-sm-10">
-					<div id="radio_button">
-						<input type="radio" name="sim" id="Sim" value="Sim">Sim
-						<span>
-						<input type="radio" name="sim" id="nao" value="Nao">Não
-						</span>
+				<div class="form-group">
+					<label class="col-sm-3 control-label"><strong>Deseja receber a <br>resposta por Email ? :</strong></label>
+					
+					<div class="col-sm-9">
+						<div class="radio-inline"id="radio_button">
+							<input type="radio" name="sim" id="Sim" value="Sim">Sim
+							<span>
+							<input type="radio" name="sim" id="nao" value="Nao">Não
+							</span>
+						</div>
+					</div> 
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-9 control-label">
+						<div class="enviar">	
+							<button class="btn btn-default" type="button" onclick="validar()">
+								Enviar
+							</button>
+						</div>
 					</div>
-				</div> 
-						
-				<div class="enviar">	
-					<button type="button" onclick="validar()">
-						Enviar
-					</button>
 				</div>
 
 			</form>
@@ -128,18 +124,15 @@
 		<footer class="container">
 
 			<span>
-				Desenvolvido por : <strong>Lucas Castro </strong>
+				Desenvolvido por : <strong>Lucas Castro</strong> - 2015
 			</span>
-
-			<span>
-			  Contato: <a href="http://www.gmail.com.br"> lucascastro.lemaf@gmail.com</a>
+			<span class="col-sm-4">
+			  Contato : <a href="http://www.gmail.com.br"> lucascastro.lemaf@gmail.com</a>
 			</span>
-
-			<span>
-			  Mais informações em: <a href="http://www.ti.lemaf.ufla.br/"><strong>Lemaf</strong></a> / <a href="http://www.ufla.br/"><strong>Ufla</strong></a> 
+			<span class="col-sm-4">
+			  Mais informações em : <a href="http://www.ti.lemaf.ufla.br/"><strong>Lemaf</strong></a> / <a href="http://www.ufla.br/"><strong>Ufla</strong></a>
 			</span>
-			-
-			<span id="ano_pagina">2015</span>
+			
 		</footer>
 
 	</div>
