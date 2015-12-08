@@ -1,6 +1,6 @@
 (function() { // função Module Pattern
 
-	var mensagem = $("#mensagem");
+	var mensagem = $(".alert");
 	var textoMensagem = $("#mensagem_texto");
 
 	// Valida se os campos estão preenchidos
@@ -17,7 +17,7 @@
 		var campoTexto = form.texto;
 		
 		var mensagensErro = [];
- 
+ 		
 		exibirMensagem();
 
 		limparCamposComErro();
@@ -46,13 +46,16 @@
 		if (campoTexto.value.length == "") {
 
 			validarCampoErro(campoTexto);
-			mensagensErro.push("Favor preencher o campo 'Mensagem'");
+			mensagensErro.push("Favor preencher o campo 'Mensagem' corretamente");
 		}
 
 		// exibição da mensagem
 		if (mensagensErro.length == 0) {
 
+			mensagem.removeClass("alert alert-danger");
+			//textoMensagem.removeClass("glyphicon glyphicon-remove")
 			exibirMensagemSucesso();
+			setTimeout(sumirMensagem, 100000);
 
 		} else {
 
@@ -68,7 +71,8 @@
 
 	var exibirMensagemSucesso = function() {
 
-		mensagem.addClass("mensagem_sucesso");
+		mensagem.addClass("alert alert-success");
+		//textoMensagem.addClass("glyphicon glyphicon-ok");
 		textoMensagem.html("Mensagem enviada com Sucesso");
 		setTimeout(sumirMensagem, 100000);
 	};
@@ -81,7 +85,8 @@
 			mensagemErro += "<br/>" + mensagensErro[i];
 		}
 
-		mensagem.addClass("mensagem_erro");
+		mensagem.addClass("alert alert-danger");
+		//textoMensagem.addClass("glyphicon glyphicon-remove")
 		textoMensagem.html(mensagemErro);
 		setTimeout(sumirMensagem, 100000);
 	};

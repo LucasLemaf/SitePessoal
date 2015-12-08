@@ -1,5 +1,5 @@
 /* o asterisco representa tudo da Pagina , ou seja um padrão que todas paginas vão receber */
-/* {
+ {
 	margin: 0;
 	padding: 0;
 	font-family: arial,tahoma,verdana;
@@ -244,40 +244,6 @@ p {
 	margin:0px 0px 57px 141px;
 }
 
-/*.linha {
-	font-weight: bold;
-	line-height: 2.5;
-	margin-left: 10px;
-	margin-top: 10px;
-	overflow: auto;	
-}
-
-.linha span {
-	float: right;
-	margin: 10px 200px 0px 0px;
-}
-
-.linha label {
-	margin: 2px 0px 0px 180px;
-	text-align: right;
-	font-weight: bold;
-	float: left;
-	width: 90px;
-}
-
-.linha select {
-	color: #555;
-	float: left;
-	margin: 10px 0px 0px 13px;
-	padding: 5px;
-	cursor: pointer;
-}
-
-.input_class {
-	padding: 5px;
-	margin: 0px 0px 5px 0px;
-}*/
-
 #pergunta {
 	margin: 20px 0px 0px 110px;
 }
@@ -308,59 +274,19 @@ p {
 	cursor: pointer;
 }
 
-#float_mensagem fieldset {
-	margin: -500px 0px 0px 200px;
-	position: absolute;
-	padding: 10px;
-	border-radius: 25px;
-	background-color: #05036B;
-	display: none;	
-}
-
-.mensagem_erro {
-	background-color: #F7CBCB;
-	color: #666;
-}
-
-.mensagem_erro #mensagem_icone {
-
-	width: 18px;
-   	height: 18px;
-	background: url(../img/iconecancelar.png);
-	background-repeat: no-repeat;
-	margin: 0px 0px -34px 4px;
-}
-
-.mensagem_sucesso {
-	color: green;
-	background-color: #ABC3AB;
-}
-
-.mensagem_sucesso #mensagem_icone {
-
-	width: 25px;
-   	height: 18px;
-	background: url(../img/iconeok.png);
-	background-repeat: no-repeat;
-	margin: -1px 0px -16px 6px;
-}
-
-#mensagem {
+.alert {
 	display: none;
 	text-align: center;
-	padding: 0px 5px 18px 10px;
-	margin: -23px 179px 29px 228px;
-	border-radius: 5px;
+	width: 500px;
+	margin: 9px -32px 47px 192px;
 }
 
-#mensagem button {
-	background-color: transparent;
-	border: none;
-	font-weight: bold;
-	cursor: pointer;
-	margin: 0px 0px 4px 401px;
-	font-size: 17px;
-	opacity: .2;
+.close {
+	margin:-5px 1px 1px 1px;
+}
+
+.glyphicon span {
+	margin: 0px 0px -60px 0px;
 }
 
 .campo_erro {
