@@ -1,0 +1,118 @@
+html
+	head
+		meta(charset='utf-8')
+		title Currículo
+		link(rel="stylesheet" href="../css/bootstrap.css")
+		link(rel="stylesheet" type="text/css" href="../css/estilo.css")
+
+	body
+		
+		div.wrapper
+
+			header
+				a#logo(href="inicio.html")
+					img(src="../img/download.jpg")
+
+				ul.nav.nav-pills.nav-justified
+					li(role="presentation")
+						a(href="inicio.html") Início
+
+					li(role="presentation")
+						a(href="curriculo.html") Currículo
+
+					li.active(role="presentation")
+						a(href="contato.html") Contato
+		
+			div#contato.conteudo
+						
+				h1 Envie uma Mensagem
+
+				div.alert
+					span
+						button.close(type="button" data-dismiss="alert" aria-label="Close" onclick="sumirMensagem()")
+							span &times;
+						span#mensagem_texto
+
+				form.form-horizontal.align-center(name="form")
+
+					div.form-group
+						label.col-sm-2.control-label Nome:*
+						div.col-sm-10
+							input(type="text" class="form-control" id="nome" required name=nome size="40" placeholder="Digite aqui seu nome")
+						
+					div.form-group
+						label.col-sm-2.control-label Email:*
+						div.col-sm-10
+							input(type="text" class="form-control" id="email" placeholder="Digite aqui seu e-mail")
+
+					div.form-group
+						label.col-sm-2.control-label Mensagem:*
+						div.col-sm-10
+							textarea(width="200" rows="10" cols="40" type="text" class="form-control" id="texto" placeholder="Digite aqui sua mensagem")
+
+					div.form-group
+						label.col-sm-2.control-label Estado:
+
+						div.col-sm-10
+							select.form-control
+								option(value="x") - Escolha -
+								option(value="x") Acre
+								option(value="x") Alagoas
+								option(value="x") Amapá
+								option(value="x") Amazonas
+								option(value="x") Bahia
+								option(value="x") Ceará
+								option(value="x") Distrito Federal(Brasília)
+								option(value="x") Espírito Santo
+								option(value="x") Goiás
+								option(value="x") Maranhão
+								option(value="x") Mato Grosso
+								option(value="x") Mato Grosso do Sul
+								option(value="x") Minas Gerais
+								option(value="x") Pará
+								option(value="x") Paraíba
+								option(value="x") Pernambuco
+								option(value="x") Piauí
+								option(value="x") Rio Grande do Norte
+								option(value="x") Rio Grande do Sul
+								option(value="x") Rio de Janeiro
+								option(value="x") Rondônia
+								option(value="x") Roraima
+								option(value="x") Santa Catarina
+								option(value="x") São Paulo
+								option(value="x") Sergipe
+								option(value="x") Tocantins
+							
+					div.form-group
+						label.col-sm-3.control-label <strong>Deseja receber a <br>resposta por Email ? :</strong>
+
+						div.col-sm-9
+							div#radio_button.radio-inline
+								input(type="radio" name="sim" id="Sim" value="Sim")
+								|Sim
+								span
+								input(type="radio" name="sim" id="nao" value="Nao")
+								|Não
+								
+					div.form-group
+						div.col-sm-9.control-label
+							div.enviar
+								button.btn.btn-default(type="button" onclick="validar()")
+									|Enviar
+
+			footer.container
+
+						span
+							|Desenvolvido por : <strong>Lucas Castro</strong> - 2015
+						span.col-sm-4
+							|Contato : 
+							a(href="http://www.gmail.com.br") lucascastro.lemaf@gmail.com
+						span.col-sm-4
+							|Mais informações em : 
+							a(href="http://www.ti.lemaf.ufla.br/") <strong>Lemaf</strong> / 
+							a(href="http://www.ufla.br/")<strong>Ufla</strong>
+
+		
+
+script(type="text/javascript" src="../jQuery/jquery-2.1.4.js")
+script(type="text/javascript" src="../js/contato.js")

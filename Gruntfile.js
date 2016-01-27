@@ -33,7 +33,8 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'<%=pasta_destino%>/inicio.html': 'jade/inicio.jade',
-					'<%=pasta_destino%>/curriculo.html': 'jade/curriculo.jade'
+					'<%=pasta_destino%>/curriculo.html': 'jade/curriculo.jade',
+					'<%=pasta_destino%>/contato.html': 'jade/contato.jade'
 
 				}
 			}
