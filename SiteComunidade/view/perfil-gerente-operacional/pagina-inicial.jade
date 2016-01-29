@@ -1,0 +1,84 @@
+include header.jade
+
+div.container.central
+	nav.col-sm-3
+		include navbar.jade
+
+	article.col-sm-9
+		ol.breadcrumb
+			li
+				a(href="../index.html") Inicial
+			li
+				a(href="index.html") Gerente Operacional
+
+			li.active Página Inicial
+
+
+		div.page-header
+			h1 Página Inicial 
+				small Gerente Operacional
+
+		hr
+
+		h2 Funcionalidades:
+		ul
+			li
+				a(href="#visualizar-alertas") Visualizar alertas
+			li
+				a(href="#visualizar-graficos") Visualizar gráficos
+
+		hr
+
+		h3
+			a(name="visualizar-alertas") 
+			|Visualizar alertas:
+
+		ul
+			li
+				<strong>Novos processos vinculados:</strong> pendente
+			li
+				<strong>Solicitações de desvinculação:</strong> pendente
+			li
+				<strong>Aguardando Validação:</strong> pendente
+			li
+				<strong>Aguardando Notificação:</strong> pendente
+			li
+				<strong>Aguardando Cancelamento:</strong> pendente
+			li
+				<strong>Outros Alertas:</strong> pendente
+
+		h3
+			a(name="visualizar-graficos")
+			|Visualizar gráficos:
+
+		p Os gráficos demonstram <i>(em tempo real)</i> a quantidade e o grupo dos processos em cada situação:
+
+		ul
+			li
+				<strong>Caixa de Entrada:</strong> pendente
+			li
+				<strong>Análise:</strong> pendente
+			li
+				<strong>Validação da Análise:</strong> pendente
+			li
+				<strong>Comunicação:</strong> pendente
+			li
+				<strong>Validados sem pendência:</strong> pendente
+			li
+				<strong>Cancelamento:</strong> pendente
+
+		hr
+		h2 Perguntas e respostas frequentes:
+		div#accordion.panel-group(role="tablist" aria-multiselectable="true")
+			div.panel.panel-default
+				div#headingOne.panel-heading(role="tab")
+					h4.panel-title
+						a(data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+						//- colocar aqui a pergunta -->
+
+				div#collapseOne.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingOne")
+					div.panel-body
+						p 
+						//- Colocar aqui a resposta
+
+include ../footer.jade

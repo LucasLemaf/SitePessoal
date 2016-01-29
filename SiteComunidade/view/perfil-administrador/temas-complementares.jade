@@ -1,0 +1,119 @@
+include header.jade
+
+div.container.central
+	nav.col-sm-3
+		include navbar.jade
+
+	article.col-sm-9
+
+		ol.breadcrumb
+			li
+				a(href="../index.html") Inicial
+			li
+				a(href="index.html") Administrador
+			li.active Temas Complementares
+
+		div.page-header
+			h1 Temas Complementares 
+				small Administrador
+
+		hr
+
+		h2 Ações:
+		ul
+			li
+				a(href="#Cadastrar-tema-complementar")
+					|Cadastrar Tema Complementar
+			li
+				a(href="#Ativar")
+					|Ativar Tema Complementar
+			li
+				a(href="#Inativar")
+					|Inativar Tema Complementar
+			li
+				a(href="#visualizar") 
+					|Visualizar Tema Complementar
+			li
+				a(href="#editar-tipo-de-documento") 
+					|Editar Tema Complementar
+			li
+				a(href="#excluir-documento")
+					|Excluir Tema Complementar
+
+		hr
+
+		h3
+			a(name="Cadastrar-tema-complementar")
+			|Cadastrar Tema Complementar:
+
+		ol
+			li pendente<strong></strong>
+
+
+		h3
+			a(name="Ativar") 
+			|Ativar Tema Complementar:
+
+		p
+
+		ol
+			li pendente<strong></strong>
+
+
+		h3
+			a(name="Inativar") 
+			|Inativar Tema Complementar:
+
+		p
+
+		ol
+			li pendente<strong></strong>
+
+
+		h3
+			a(name="visualizar") 
+			|Visualizar Tema Complementar:
+
+		ol
+			li pendente<strong></strong>
+
+		h3
+			a(name="editar-tipo-de-documento") 
+			|Editar Tema Complementar:
+
+		ol
+			li pendente
+
+
+		h3
+			a(name="excluir-documento") 
+			|Excluir Tema Complementar:
+
+		ol
+			li pendente
+
+		hr
+		h2 Perguntas e respostas frequentes:
+		div#accordion.panel-group(role="tablist" aria-multiselectable="true")
+			div.panel.panel-default
+				div#headingOne.panel-heading(role="tab")
+					h4.panel-title
+						a(data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+						//- colocar aqui a pergunta -->
+
+				div#collapseOne.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingOne")
+					div.panel-body
+						p 
+						//- Colocar aqui a resposta
+
+			div.panel.panel-default
+				div#headingTwo.panel-heading(role="tab")
+					h4.panel-title
+						a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+						//- colocar aqui a pergunta
+
+				div#collapseTwo.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingTwo")
+					div.panel-body
+						p 
+						//- colocar aqui a resposta
+include ../footer.jade

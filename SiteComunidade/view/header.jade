@@ -1,0 +1,48 @@
+block variables
+	- var caminho_pasta_raiz = "./";
+	- var bgquadro = "imgs/background-4.jpg";
+	- var titulo = "Seja bem vindo";
+	- var descricao = "O Guia de Regras do CAR - Módulo de Análise possui todas as instruções necessárias para para o manuseio da ferramenta, do Gerente Operacional ao Técnico. Utilize o menu superior para navegar entre os perfis e o menu inferior para navegar entre as categorias de cada módulo.";
+
+
+doctype html
+html(lang="pt-BR")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+
+		title CAR - Módulo de Análise | Guia de Regras
+
+		<!-- Bootstrap -->
+		link(href="#{caminho_pasta_raiz}css/bootstrap.min.css", rel="stylesheet")
+		link(href="#{caminho_pasta_raiz}css/estilo.css", rel="stylesheet")
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
+		script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
+		<![endif]-->
+	
+	body
+
+		nav.navbar-car
+			div.container
+				div.row
+					div.col-sm-6.col-sm-offset-6.text-right
+						a.btn.btn-link(href="#{caminho_pasta_raiz}perfil-administrador/index.html") Administrador
+						a.btn.btn-link(href="#{caminho_pasta_raiz}perfil-gerente-operacional/index.html") Gerente Operacional
+						a.btn.btn-link(href="#{caminho_pasta_raiz}perfil-tecnico/index.html") Técnico
+				div.row
+					div.col-sm-8
+						span Guia de Regras
+						block titulo_topo
+							h1
+								a(href='index.html') Módulo de Análise
+
+		div.bg-quadro(style="background-image: url('#{bgquadro}');")
+			div.container
+				div.col-sm-7
+					h1 #{titulo}
+					p #{descricao}

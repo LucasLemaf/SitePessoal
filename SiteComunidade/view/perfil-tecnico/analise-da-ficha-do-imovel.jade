@@ -1,0 +1,149 @@
+include header.jade
+
+div.container.central
+	nav.col-sm-3
+		//- (Mudança a estrutura) ao invés de usar include navbar , aqui tive que colocar todos submenu pois dentro de Análise Técnica possui um outro submenu e as demais páginas dentro do submenu estão com essa mesma estrutura
+		div.list-group
+			a.list-group-item(href="index.html") Técnico
+			a.list-group-item(href="pagina-inicial.html") Página Inicial
+			a.list-group-item(href="caixa-de-entrada.html") Caixa de Entrada
+			a.list-group-item.active(href="analise-tecnica.html") Análise Técnica
+			div.list-group-item
+				a(href='dados-gerais.html' role='button') Dados Gerais
+				br
+				a(href='documentos-enviados.html' role='button') Documentos Enviados
+				br
+				a(href='analise-da-ficha-do-imovel.html' role='button') Análise da Ficha do Imóvel
+				br
+				a(href='analise-geo.html' role='button') Análise Geo
+				br
+				a(href='vistoria.html' role='button') Vistoria
+				br
+				a(href='resumo.html' role='button') Resumo
+				br
+				a(href='conclusao.html' role='button') Conclusão
+			a.list-group-item(href="consultar-processos.html") Consultar Processos
+	
+		a(href="../index.html")« Voltar
+
+	article.col-sm-9
+
+		ol.breadcrumb
+			li
+				a(href="../index.html") Inicial
+			li
+				a(href="index.html") Técnico
+			li
+				a(href="analise-tecnica.html") Análise Técnica
+			li.active Análise da Ficha do Imóvel
+
+
+		div.page-header
+			h1 Análise » Análise da Ficha do Imóvel 
+				small Técnico
+
+		h2 Itens:
+
+		ul
+			li
+				a(href="#dados-do-imovel") Dados do Imóvel
+			li
+				a(href="#dominio-e-documentacao-do-ir") Domínio e Documentação do IR
+			li
+				a(href="#analise-das-declaracoes") Análise das declarações de alteração da área do Imóvel Rural após 22/07/2008
+			li
+				a(href="#solicitacao-de-documentos") Solicitação de documentos
+			li
+				a(href="#observacao") Observação
+
+		hr
+
+		h3
+			a(name="dados-do-imovel")
+			|Dados do Imóvel:
+		p Análise dos dados referentes à identificação do imóvel, declarados pelo cadastrante:
+		ul
+			li <strong>Zona de localização:</strong>
+			ul
+				li Rural
+				li Urbana
+
+			li <strong>Tipo do imóvel:</strong>
+			ul
+				li Imóvel Rural
+				li Imóvel Rural de Povos e Comunidades Tradicionais
+				li Imóvel Rural de Assentamentos da Reforma Agrária
+
+			li <strong>Descrição de acesso:</strong> informação descrita pelo cadastrante no momento do cadastro.
+
+		br
+
+		h3
+			a(name="dominio-e-documentacao-do-ir")
+			|Domínio e Documentação do IR:
+		p Análise dos dados referentes ao domínio e documentação do imóvel rural, declarados pelo cadastrante.
+		ul
+			li <strong>Domínio:</strong>
+			ul
+				li Tipo
+				li Nome
+				li CPF
+				li Data de nascimento
+				li Nome da mãe
+			li <strong>Documentação do imóvel rural:</strong>
+			ul
+				li Tipo
+				li Denominação
+				li Tipo de documento
+				li Número do documento
+				li Livro
+				li Folha
+				li Município do cartório
+				li Código no SNCR
+				li Proprietários / Possuidores / Concessionários:
+				ul
+					li Nome
+					li CPF
+		br
+
+		h3
+			a(name="analise-das-declaracoes")
+			|Análise das declarações de alteração da área do Imóvel Rural após 22/07/2008:
+		p Análise dos dados declarados em relação a alteração da área do Imóvel Rural após 22/07/2008, declarado pelo cadastrante.
+		br
+
+		h3
+			a(name="solicitacao-de-documentos")
+			|Solicitação de documentos:
+		p Lista os documentos disponíveis para solicitação ao proprietário / possuidor.
+		br
+
+		h3
+			a(name="observacao")
+			|Observação:
+		p Campo descritivo que permite aos técnicos inserir observações referentes à etapa, disponíveis a toda equipe técnica durante a análise para visualização e edição.
+		p <strong>Obs:</strong> os dados inseridos no campo observação não são enviados ao proprietário / possuidor.
+
+//-
+		hr
+		h2 Perguntas e respostas frequentes
+		div#accordion.panel-group(role="tablist" aria-multiselectable="true")
+			div.panel.panel-default
+				div#headingOne.panel-heading(role="tab")
+					h4.panel-title
+						a(data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+							|Como o proprietário/possuidor pode enviar um documento?
+
+				div#collapseOne.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingOne")
+					div.panel-body
+						p Basta utilizar a Cetral de Comunicação.
+
+			div.panel.panel-default
+				div#headingTwo.panel-heading(role="tab")
+					h4.panel-title
+						a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+							|Pergunta 2
+				div#collapseTwo.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingTwo")
+					div.panel-body
+						p Resposta 2
+include ../footer.jade						

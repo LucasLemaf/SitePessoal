@@ -1,0 +1,81 @@
+include header.jade
+
+div.container.central
+	nav.col-sm-3
+		include navbar.jade
+
+	article.col-sm-9
+
+
+		ol.breadcrumb
+			li
+				a(href="../index.html") Inicial
+			li
+				a(href="index.html") Gerente Operacional
+			li.active Cancelamento
+
+		div.page-header
+			h1 Cancelamento 
+				small Gerente Operacional
+		hr
+
+		h2 Ações:
+		ul
+			li
+				a(href="#detalhes-do-imóvel") Detalhes do Imóvel
+			li
+				a(href="#restaurar") Restaurar
+			li
+				a(href="#cancelar-processo") Cancelar Processo
+
+		h3
+			a(name="detalhes-do-imóvel")
+			|Detalhes do Imóvel
+		ol
+			li pendente<strong></strong>
+
+		h3
+			a(name="restaurar")
+			|Restaurar
+		ol
+			li pendente<strong></strong>
+
+		h3
+			a(name="cancelar-processo")
+			|Cancelar Processo
+		ol
+			li pendente<strong></strong>
+
+		h2 Funcionalidades:
+		ul
+			li
+				a(href="#")
+				|pendente
+		hr
+		hr
+
+		hr
+		h2 Perguntas e respostas frequentes:
+		div#accordion.panel-group(role="tablist" aria-multiselectable="true")
+			div.panel.panel-default
+				div#headingOne.panel-heading(role="tab")
+					h4.panel-title
+						a(data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+						//- colocar aqui a pergunta -->
+
+				div#collapseOne.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingOne")
+					div.panel-body
+						p 
+							//- Colocar aqui a resposta
+
+			div.panel.panel-default
+				div#headingTwo.panel-heading(role="tab")
+					h4.panel-title
+						a.collapsed(data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+							//- colocar aqui a pergunta
+
+				div#collapseTwo.panel-collapse.collapse(role="tabpanel" aria-labelledby="headingTwo")
+					div.panel-body
+						p 
+							//- colocar aqui a resposta
+include ../footer.jade					

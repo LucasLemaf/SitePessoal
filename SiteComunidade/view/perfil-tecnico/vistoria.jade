@@ -1,0 +1,74 @@
+include header.jade
+
+div.container.central
+	nav.col-sm-3
+		//- (Mudança a estrutura) ao invés de usar include navbar , aqui tive que colocar todos submenu pois dentro de Análise Técnica possui um outro submenu e as demais páginas dentro do submenu estão com essa mesma estrutura
+		div.list-group
+			a.list-group-item(href="index.html") Técnico
+			a.list-group-item(href="pagina-inicial.html") Página Inicial
+			a.list-group-item(href="caixa-de-entrada.html") Caixa de Entrada
+			a.list-group-item.active(href="analise-tecnica.html") Análise Técnica
+			div.list-group-item
+				a(href='dados-gerais.html' role='button') Dados Gerais
+				br
+				a(href='documentos-enviados.html' role='button') Documentos Enviados
+				br
+				a(href='analise-da-ficha-do-imovel.html' role='button') Análise da Ficha do Imóvel
+				br
+				a(href='analise-geo.html' role='button') Análise Geo
+				br
+				a(href='vistoria.html' role='button') Vistoria
+				br
+				a(href='resumo.html' role='button') Resumo
+				br
+				a(href='conclusao.html' role='button') Conclusão
+			a.list-group-item(href="consultar-processos.html") Consultar Processos
+	
+		a(href="../index.html")« Voltar
+
+	article.col-sm-9
+
+		ol.breadcrumb
+			li
+				a(href="../index.html") Inicial
+			li
+				a(href="index.html") Técnico
+			li
+				a(href="analise-tecnica.html") Análise Técnica
+			li.active Vistoria
+
+		div.page-header
+			h1 Análise » Vistoria 
+				small Técnico
+
+
+		h2 Itens:
+
+		ul
+			li
+				a(href="#solicitacoes-pendentes") Solicitações pendentes de envio para validação
+			li
+				a(href="#solicitacoes-aguardando") Solicitações aguardando validação
+			li
+				a(href="#vistorias-avaliadas") Vistorias validadas
+
+		hr
+
+		h3
+			a(name="solicitacoes-pendentes")
+			|Solicitações pendentes de envio para validação:
+		p Exibe as solicitações de vistorias ainda pendentes de envio para validação pelo Gerente Operacional.
+		br
+
+		h3
+			a(name="solicitacoes-aguardando")
+			|Solicitações aguardando validação:
+		p Exibe as solicitações de vistorias já enviadas ao Gerente Operacional, aguardando validação pelo mesmo.
+		br
+
+		h3
+			a(name="vistorias-avaliadas")
+			|Vistorias validadas:
+		p Exibe as vistorias já validadas pelo Gerente Operacional, podendo ter sido aprovadas ou reprovadas.
+		br
+include ../footer.jade

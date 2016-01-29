@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CAR - Módulo de Análise | Guia de Regras</title><!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/estilo.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <nav class="navbar-car">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-6 text-right"><a href="../perfil-administrador/index.html" class="btn btn-link">Administrador</a><a href="../perfil-gerente-operacional/index.html" class="btn btn-link">Gerente Operacional</a><a href="../perfil-tecnico/index.html" class="btn btn-link">Técnico</a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8"><span>Guia de Regras</span>
+            <h1><a href="../index.html">Módulo de Análise</a> » <a href="index.html">Técnico</a></h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div style="background-image: url('../imgs/background-3.jpg');" class="bg-quadro">
+      <div class="container">
+        <div class="col-sm-7">
+          <h1>Análise do imóvel</h1>
+          <p>O perfil Técnico é o repsonsável pela análise completa dos processos, da análise da ficha do imóvel à aprovação da Reserva Legal. Cabe também aos técnicos as solicitações de vistorias e realização das mesmas junto aos analistas de campo.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<div class="container central">
+  <nav class="col-sm-3">
+    <div class="list-group"><a href="index.html" class="list-group-item active">Técnico</a><a href="pagina-inicial.html" class="list-group-item">Página Inicial</a><a href="caixa-de-entrada.html" class="list-group-item">Caixa de Entrada</a><a href="analise-tecnica.html" class="list-group-item">Análise Técnica</a><a href="consultar-processos.html" class="list-group-item">Consultar Processos</a></div><a href="../index.html">« Voltar</a>
+  </nav>
+  <article class="col-sm-9">
+    <ol class="breadcrumb">
+      <li><a href="../index.html">Inicial</a></li>
+      <li><a href="index.html">Técnico</a></li>
+      <li class="active">Página Inicial</li>
+    </ol>
+    <div class="page-header">
+      <h1>Página Inicial <small>Técnico</small></h1>
+    </div><img src="../imgs/perfil-tecnico/pagina-inicial/1-pagina-inicial.jpg" class="img-responsive">
+    <hr>
+    <h2>Funcionalidades:</h2>
+    <ul>
+      <li><a href="#visualizar-alertas">Visualizar alertas</a></li>
+      <li><a href="#visualizar-graficos">Visualizar gráficos</a></li>
+    </ul>
+    <hr>
+    <h3><a name="visualizar-alertas"></a>Visualizar alertas:</h3>
+    <ul>
+      <li><strong>Novos processos vinculados:</strong> exibe os processos recém vinculados ao técnico pelo Gerente Operacional.</li>
+      <li><strong>Processos desvinculados:</strong> exibe os processos recém desvinculados ao técnico pelo Gerente Operacional.</li>
+      <li><strong>Processos validados:</strong> exibe os processos recém validados pelo Gerente Operacional dos quais o técnico faz parte de equipe técnica</li>
+      <li><strong>Outros alertas:</strong>exibe os demais alertas referentes aos processos vinculados ao técnico.</li>
+    </ul>
+    <h3><a name="visualizar-graficos"></a>Visualizar gráficos:</h3>
+    <p>Os gráficos demonstram <i>(em tempo real)</i> a quantidade e o grupo dos processos em cada situação:</p>
+    <ul>
+      <li><strong>Caixa de Entrada:</strong> processos presentes na Caixa de Entrada do técnico, aguardando o início da análise.</li>
+      <li><strong>Processos em Análise:</strong> processos em análise pelo técnico.</li>
+      <li><strong>Aguardando validação:</strong> processos já analisados pelo técnico, aguardando a validação (aprovação ou não aprovação da análise) pelo Gerente Operacional.</li>
+      <li><strong>Validação de processos:</strong> processos já validados pelo Gerente Operacional.</li>
+    </ul>
+    <hr>
+    <h2>Perguntas e respostas frequentes:</h2>
+    <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
+      <div class="panel panel-default">
+        <div id="headingOne" role="tab" class="panel-heading">
+          <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Por que meus alertas não batem com o número de processos presentes nas etapas?</a></h4>
+        </div>
+        <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+          <div class="panel-body">A contabilização se refere à quantidade de alertas não visualizados e não à quantidade de processos na etapa referente. Ou seja, é possível que hajam 10 alertas de 'Novos processos vinculados' e na Caixa de Entrada não possua nenhum processo ou vice-versa, contendo 10 processos na 'Caixa de Entrada' e nenhum alerta de 'Novos processos vinculados', no caso do técnico ter limpado o mesmo.</div>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+<footer class="container"><br>
+  <div class="text-right"><a href="#" class="btn btn-link"><span class="glyphicon glyphicon-triangle-top"> </span> voltar ao topo</a></div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-4">SFB - IBAMA - MMA</div>
+    <div class="col-sm-8 text-right">CAR - Módulo de Análise - Guia de Regras</div>
+  </div><br>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>

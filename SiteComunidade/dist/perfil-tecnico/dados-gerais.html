@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CAR - Módulo de Análise | Guia de Regras</title><!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/estilo.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <nav class="navbar-car">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-6 text-right"><a href="../perfil-administrador/index.html" class="btn btn-link">Administrador</a><a href="../perfil-gerente-operacional/index.html" class="btn btn-link">Gerente Operacional</a><a href="../perfil-tecnico/index.html" class="btn btn-link">Técnico</a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8"><span>Guia de Regras</span>
+            <h1><a href="../index.html">Módulo de Análise</a> » <a href="index.html">Técnico</a></h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div style="background-image: url('../imgs/background-3.jpg');" class="bg-quadro">
+      <div class="container">
+        <div class="col-sm-7">
+          <h1>Análise do imóvel</h1>
+          <p>O perfil Técnico é o repsonsável pela análise completa dos processos, da análise da ficha do imóvel à aprovação da Reserva Legal. Cabe também aos técnicos as solicitações de vistorias e realização das mesmas junto aos analistas de campo.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<div class="container central">
+  <nav class="col-sm-3">
+    <div class="list-group"><a href="index.html" class="list-group-item">Técnico</a><a href="pagina-inicial.html" class="list-group-item">Página Inicial</a><a href="caixa-de-entrada.html" class="list-group-item">Caixa de Entrada</a><a href="analise-tecnica.html" class="list-group-item active">Análise Técnica</a>
+      <div class="list-group-item"><a href="dados-gerais.html" role="button">Dados Gerais</a><br><a href="documentos-enviados.html" role="button">Documentos Enviados</a><br><a href="analise-da-ficha-do-imovel.html" role="button">Análise da Ficha do Imóvel</a><br><a href="analise-geo.html" role="button">Análise Geo</a><br><a href="vistoria.html" role="button">Vistoria</a><br><a href="resumo.html" role="button">Resumo</a><br><a href="conclusao.html" role="button">Conclusão</a></div><a href="consultar-processos.html" class="list-group-item">Consultar Processos</a>
+    </div><a href="../index.html">« Voltar</a>
+  </nav>
+  <article class="col-sm-9">
+    <ol class="breadcrumb">
+      <li><a href="../index.html">Inicial</a></li>
+      <li><a href="index.html">Técnico</a></li>
+      <li><a href="analise-tecnica.html">Análise Técnica</a></li>
+      <li class="active">Dados Gerais</li>
+    </ol>
+    <div class="page-header">
+      <h1>Análise » Dados Gerais <small>Técnico</small></h1>
+    </div>
+    <h2>Itens:</h2>
+    <ul>
+      <li><a href="#tecnicos-responsaveis">Técnicos Responsáveis</a></li>
+      <li><a href="#historico-da-analise">Histórico da análise</a></li>
+      <li><a href="#historico-do-processo">Histórico do processo</a></li>
+      <li><a href="#historico-da-tramitacao">Histórico da tramitação</a></li>
+      <li><a href="#analises-anteriores">Análises Anteriores</a></li>
+    </ul>
+    <hr>
+    <h3><a name="tecnicos-responsaveis"></a>Técnicos Responsáveis</h3>
+    <p>Exibe os dados dos técnicos que compõe atualmente a equipe técnica de análise do processo:</p>
+    <ul>
+      <li>Nome</li>
+      <li>CPF</li>
+    </ul><br>
+    <h3><a name="historico-da-analise"></a>Histórico da análise</h3>
+    <p>Exibe os dados do histórico da análise atual:</p></p>
+    <ul>
+      <li><strong>Data de envio do car:</strong> dia em que o processo foi enviado para a base de dados do SICAR.</li>
+      <li><strong>Data da primeira vinculação da equipe:</strong> dia em que foi realizada a primeira vinculação de técnicos à equipe pelo Gerente Operacional.</li>
+      <li><strong>Data do início da análise técnica:</strong> dia em que o primeiro técnico da equipe iniciou análise.</li>
+      <li><strong>Data de finalização da análise técnica:</strong> dia em que o técnico líder finalizou a análise.</li>
+      <li><strong>Data de conclusão da análise técnica:</strong> dia em que o técnico líder concluiu a análise.</li>
+      <li><strong>Duração da análise:</strong> tempo total de duração da análise (do início da análise pelo primeiro ténico ao momento da conclusão da mesma pelo técnico líder).</li>
+    </ul><br>
+    <h3><a name="historico-do-processo"></a>Histórico do processo</h3>
+    <p>Exibe os dados referentes ao histórico do processo (SICAR):</p>
+    <ul>
+      <li>Data</li>
+      <li>Descrição</li>
+    </ul><br>
+    <h3><a name="historico-da-tramitacao"></a>Histórico da tramitação</h3>
+    <p>Exibe os dados referentes às tramitações da análise atual:</p>
+    <ul>
+      <li>Data</li>
+      <li>Hora</li>
+      <li>Ação</li>
+    </ul><br>
+    <h3><a name="analises-anteriores"></a>Análises Anteriores</h3>
+    <p>Exibe os dados e documentos resultantes das análises anteriores do processo:</p>
+    <ul>
+      <li><strong>Parecer Técnico:</strong> documento PDF com o Parecer Técnico gerado pela equipe técnica.</li>
+      <li><strong>Relatório de Análise:</strong> documento PDF com o Relatório de Análise gerada pelo Gerente Operacional.</li>
+      <li><strong>Dados Análise:</strong> exibe os dados referente às análises anteriores.</li>
+    </ul><br>
+  </article>
+</div>
+<footer class="container"><br>
+  <div class="text-right"><a href="#" class="btn btn-link"><span class="glyphicon glyphicon-triangle-top"> </span> voltar ao topo</a></div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-4">SFB - IBAMA - MMA</div>
+    <div class="col-sm-8 text-right">CAR - Módulo de Análise - Guia de Regras</div>
+  </div><br>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
