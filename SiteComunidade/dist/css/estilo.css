@@ -51,6 +51,6 @@ footer {
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
-  background-color: #5cb85c;
+ /* background-color: #5cb85c;
   border-color: #4cae4c;
-}
+}*/
